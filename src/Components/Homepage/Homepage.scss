@@ -1,0 +1,42 @@
+@import '../Variables/Variables.scss';
+
+.homepage {
+    height: 50rem;
+    background-image: url('../Background-img/image-hero-coffeepress.jpg');
+    width: 90vw;
+    background-size: cover;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .homepage__title {
+        font-size: $forty;
+        color: $light-cream;
+        font-family: $fraunces;
+        width: 90%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .homepage__info {
+        font-size: $fifteen;
+        color: $light-cream;
+        font-family: $barlow;
+        text-align: center;
+        width: 90%;
+        margin-bottom: 4rem;
+        line-height: 3rem;
+    }
+
+    .homepage__button {
+        font-family: $fraunces;
+        font-size: $eighteen;
+        color: $light-cream;
+        background-color: $dark-cyan;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 1.5rem 3rem;
+    }
+}
