@@ -1,0 +1,33 @@
+@import '../Variables/Variables.scss';
+
+.why-us {
+    width: 90vw;
+    border-radius: 1rem;
+    background-color: $light-dark-grey-blue;
+
+    .why-us__intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        background-color: $dark-grey-blue;
+        padding-bottom: 3rem;
+
+        .why-us__intro__title {
+            font-family: $fraunces;
+            font-size: $twentyeight;
+            color: $light-cream;
+            margin: 4rem 0rem 2rem 0rem;
+        }
+
+        .why-us__intro__info {
+            font-family: $barlow;
+            font-size: $fifteen;
+            color: $transparent-light-cream;
+            text-align: center;
+            width: 80vw;
+            line-height: $line-height-three;
+        }
+    }
+}
