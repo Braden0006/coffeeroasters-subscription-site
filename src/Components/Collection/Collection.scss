@@ -1,0 +1,13 @@
+@import '../Variables/Variables.scss';
+
+.collection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .collection__title {
+        font-size: $forty;
+        font-family: $fraunces;
+        margin-bottom: 4rem;
+    }
+}

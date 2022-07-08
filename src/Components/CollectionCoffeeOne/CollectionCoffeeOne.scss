@@ -1,0 +1,30 @@
+@import '../Variables/Variables.scss';
+
+.collection__coffee-one-container {
+
+    .collection__coffee-one {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .collection__coffee-one__img {
+            height: 15.1rem;
+            width: 20rem;
+            margin-bottom: 3rem;
+        }
+
+        .collection__coffee-one__name {
+            font-size: $twentyfour;
+            font-family: $fraunces;
+            color: $dark-grey-blue;
+            margin-bottom: 2rem;
+        }
+
+        .collection__coffee-one__info {
+            font-size: $fifteen;
+            font-family: $barlow;
+            line-height: $line-height-three;
+            width: 70vw;
+        }
+    }
+}
