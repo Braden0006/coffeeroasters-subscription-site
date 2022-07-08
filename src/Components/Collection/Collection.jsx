@@ -3,6 +3,7 @@ import React from "react";
 import CollectionCoffeeOne from "../CollectionCoffeeOne/CollectionCoffeeOne";
 import CollectionCoffeeTwo from "../CollectionCoffeeTwo/CollectionCoffeeTwo";
 import CollectionCoffeeThree from "../CollectionCoffeeThree/CollectionCoffeeThree";
+import CollectionCoffeeFour from "../CollectionCoffeeFour/CollectionCoffeeFour";
 
 import "./Collection.css";
 
@@ -13,6 +14,7 @@ export default function Collection() {
       <CollectionCoffeeOne />
       <CollectionCoffeeTwo />
       <CollectionCoffeeThree />
+      <CollectionCoffeeFour />
     </section>
   );
 }
