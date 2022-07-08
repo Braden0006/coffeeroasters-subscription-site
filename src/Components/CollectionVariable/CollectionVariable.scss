@@ -1,0 +1,29 @@
+@import '../Variables/Variables.scss';
+
+@mixin collection-coffee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+@mixin collection-coffee__img {
+    height: 15.1rem;
+    width: 20rem;
+    margin-bottom: 3rem;
+}
+
+@mixin collection-coffee__name {
+    font-size: $twentyfour;
+    font-family: $fraunces;
+    color: $dark-grey-blue;
+    margin-bottom: 2rem;
+}
+
+@mixin collection-coffee__info {
+    font-size: $fifteen;
+    font-family: $barlow;
+    line-height: $line-height-three;
+    width: 75vw;
+    text-align: center;
+}
