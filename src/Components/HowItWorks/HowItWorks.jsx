@@ -13,6 +13,7 @@ export default function HowItWorks() {
         <HowItWorksCardOne />
         <HowItWorksCardTwo />
         <HowItWorksCardThree />
+        
     </section>
   )
 }

@@ -1,5 +1,7 @@
 import React from "react";
 
+import HomepageButton from "../HomepageButton/HomepageButton";
+
 import "./Homepage.css";
 
 export default function Homepage() {
@@ -11,7 +13,7 @@ export default function Homepage() {
         curated artisan coffees from our best roasters delivered directly to
         your door, at your schedule.
       </p>
-      <button className="homepage__button">Create your plan</button>
+      <HomepageButton />
     </section>
   );
 }
