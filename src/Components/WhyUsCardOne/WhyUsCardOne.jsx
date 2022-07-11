@@ -4,7 +4,7 @@ import "./WhyUsCardOne.css";
 
 export default function WhyUsCardOne() {
   return (
-    <section className="why-us-card-container">
+    <section className="why-us-card-container card-one">
       <div className="why-us-card">
         <span className="why-us-card__img">
           <svg width="73" height="72" xmlns="http://www.w3.org/2000/svg">

@@ -1,6 +1,7 @@
 import React from "react";
 
 import WhyUsCardOne from "../WhyUsCardOne/WhyUsCardOne";
+import WhyUsCardThree from "../WhyUsCardThree/WhyUsCardThree";
 import WhyUsCardTwo from "../WhyUsCardTwo/WhyUsCardTwo";
 
 import './WhyUs.css';
@@ -18,6 +19,7 @@ export default function WhyUs() {
       </div>
       <WhyUsCardOne />
       <WhyUsCardTwo />
+      <WhyUsCardThree />
     </section>
   );
 }
