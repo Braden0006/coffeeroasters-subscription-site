@@ -1,0 +1,29 @@
+@import '../Variables/Variables.scss';
+
+.commitment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    margin-top: 10rem;
+    
+    .commitment__img {
+        height: 40rem;
+        border-radius: 1rem;
+    }
+
+    .commitment__title {
+        font-family: $fraunces;
+        font-size: $thirtytwo;
+        color: $dark-grey-blue;
+        margin: 5rem 0rem 2rem 0rem;
+    }
+
+    .commitment__description {
+        font-family: $barlow;
+        font-size: $fifteen;
+        line-height: $line-height-twentyfive;
+        color: $dark-grey-blue;
+        text-align: center;
+    }
+}
