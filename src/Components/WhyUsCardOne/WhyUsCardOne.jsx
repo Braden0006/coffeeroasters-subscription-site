@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./WhyUsCardOne.css";
+import '../WhyUsCardStyle/WhyUsCardStyle.css';
 
 export default function WhyUsCardOne() {
   return (
