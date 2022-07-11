@@ -9,6 +9,8 @@ import WhyUs from "./Components/WhyUs/WhyUs";
 
 import HowItWorks from "./Components/HowItWorks/HowItWorks";
 
+import Footer from './Components/Footer/Footer';
+
 import "./App.css";
 
 function App() {
@@ -29,6 +31,10 @@ function App() {
 
       <section className="app-how">
         <HowItWorks />
+      </section>
+
+      <section className="app-footer">
+        <Footer />
       </section>
     </>
   );
