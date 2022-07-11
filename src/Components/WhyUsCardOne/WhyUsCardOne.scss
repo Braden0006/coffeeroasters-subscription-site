@@ -4,7 +4,7 @@
 .why-us-card-container {
     display: flex;
     flex-direction: column;
-    margin-top: 4rem;
+    margin-top: 3rem;
     align-items: center;
 
     .why-us-card {
@@ -30,6 +30,7 @@
             text-align: center;
             width: 60vw;
             font-size: $fifteen;
+            font-family: $barlow;
             line-height: $line-height-three;
         }
     }
