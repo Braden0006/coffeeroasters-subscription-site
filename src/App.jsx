@@ -2,8 +2,12 @@ import React from "react";
 
 import Navbar from "./Components/Navbar/Navbar";
 import Homepage from "./Components/Homepage/Homepage";
+
 import Collection from "./Components/Collection/Collection";
+
 import WhyUs from "./Components/WhyUs/WhyUs";
+
+import HowItWorks from "./Components/HowItWorks/HowItWorks";
 
 import "./App.css";
 
@@ -14,11 +18,17 @@ function App() {
         <Navbar />
         <Homepage />
       </section>
+
       <section className="app-collection">
         <Collection />
       </section>
+
       <section className="app-why-us">
         <WhyUs />
+      </section>
+
+      <section className="app-how">
+        <HowItWorks />
       </section>
     </>
   );
