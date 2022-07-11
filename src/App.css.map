@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["App.scss"],"names":[],"mappings":"AAAA,qBAGE,sBACA,SAGF,KACE,gBAGF,UACE,aACA,sBACA,YACA,mBAGF,gBACE,aACA,sBACA,mBAGF,YACE,aACA,sBACA,mBACA,cAGF,SACE,aACA,sBACA,mBACA,iBAGF,YACE,aACA,YACA,iBACA","file":"App.css"}
+{"version":3,"sourceRoot":"","sources":["App.scss","AppVariable.scss"],"names":[],"mappings":"AAEA,qBAGE,sBACA,SAGF,KACE,gBAGF,UCZI,aACA,sBACA,mBDYF,YAGF,gBCjBI,aACA,sBACA,mBDmBJ,YCrBI,aACA,sBACA,mBDqBF,cAGF,SC1BI,aACA,sBACA,mBD0BF,iBAGF,YACE,aACA,YACA,iBACA,uBAGF,WCtCI,aACA,sBACA","file":"App.css"}

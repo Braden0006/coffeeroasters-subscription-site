@@ -1,3 +1,5 @@
+@import './AppVariable.scss';
+
 *,
 *::before,
 *::after {
@@ -10,29 +12,21 @@ html {
 }
 
 .app-home {
-  display: flex;
-  flex-direction: column;
+  @include app-container;
   height: 90vh;
-  align-items: center;
 }
 
 .app-collection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include app-container
 }
 
 .app-why-us {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include app-container;
   height: 152rem;
 }
 
 .app-how {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include app-container;
   margin-top: 10rem;
 }
 
@@ -41,4 +35,8 @@ html {
   height: 50vh;
   margin-top: 10rem;
   justify-content: center;
+}
+
+.app-about {
+  @include app-container;
 }

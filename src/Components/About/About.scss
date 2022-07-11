@@ -1,0 +1,29 @@
+@import '../Variables/Variables.scss';
+
+.about {
+    width: 90vw;
+    background-image: url('../Background-img/image-hero-whitecup.jpg');
+    background-size: cover;
+    height: 40rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .about__title {
+        color: $light-cream;
+        font-size: $twentyeight;
+        font-family: $fraunces;
+    }
+
+    .about__description {
+        font-family: $barlow;
+        font-size: $fifteen;
+        color: $transparent-light-cream;
+        line-height: $line-height-twentyfive;
+        text-align: center;
+        width: 84%;
+        margin-top: 2rem;
+    }
+}
