@@ -3,6 +3,7 @@ import React from 'react'
 import HowItWorksCardOne from '../HowItWorksCardOne/HowItWorksCardOne';
 import HowItWorksCardThree from '../HowItWorksCardThree/HowItWorksCardThree';
 import HowItWorksCardTwo from '../HowItWorksCardTwo/HowItWorksCardTwo';
+import HomepageButton from '../HomepageButton/HomepageButton';
 
 import './HowItWorks.css';
 
@@ -13,7 +14,7 @@ export default function HowItWorks() {
         <HowItWorksCardOne />
         <HowItWorksCardTwo />
         <HowItWorksCardThree />
-        
+        <HomepageButton />
     </section>
   )
 }
