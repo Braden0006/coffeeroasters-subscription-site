@@ -1,5 +1,7 @@
 import React from "react";
 
+import WhyUsCardOne from "../WhyUsCardOne/WhyUsCardOne";
+
 import './WhyUs.css';
 
 export default function WhyUs() {
@@ -13,6 +15,7 @@ export default function WhyUs() {
             growers to give you a more impactful experience on every level.
           </p>
       </div>
+      <WhyUsCardOne />
     </section>
   );
 }

@@ -1,0 +1,36 @@
+@import '../Variables/Variables.scss';
+
+
+.why-us-card-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    align-items: center;
+
+    .why-us-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 38.2rem;
+        width: 80vw;
+        background-color: $dark-cyan;
+        border-radius: 1rem;
+
+        .why-us-card__title {
+            font-family: $fraunces;
+            font-size: $twentyfour;
+            color: $light-cream;
+            margin-top: 5rem;
+            margin-bottom: 2rem;
+        }
+
+        .why-us-card__description {
+            color: $light-cream;
+            text-align: center;
+            width: 60vw;
+            font-size: $fifteen;
+            line-height: $line-height-three;
+        }
+    }
+}
