@@ -4,7 +4,7 @@ import '../HowItWorksCardStyle/HowItWorksCardStyle.css';
 
 export default function HowItWorksCardOne() {
   return (
-    <div className="how-card">
+    <div className="how-card card-one">
       <span className="how-card__number">01</span>
       <h2 className="how-card__title">Pick your coffee</h2>
       <p className="how-card__description">

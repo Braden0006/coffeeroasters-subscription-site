@@ -1,6 +1,7 @@
 import React from 'react'
 
 import HowItWorksCardOne from '../HowItWorksCardOne/HowItWorksCardOne';
+import HowItWorksCardTwo from '../HowItWorksCardTwo/HowItWorksCardTwo';
 
 import './HowItWorks.css';
 
@@ -9,6 +10,7 @@ export default function HowItWorks() {
     <section className='how'>
         <h2 className='how__title'>How it works</h2>
         <HowItWorksCardOne />
+        <HowItWorksCardTwo />
     </section>
   )
 }
