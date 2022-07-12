@@ -1,0 +1,39 @@
+@import '../Variables/Variables.scss';
+
+.card-one {
+    margin-top: 7rem !important;
+}
+
+.card-three {
+    margin-bottom: 8rem;
+}
+
+.how-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+
+    .how-card__number {
+        font-size: $seventytwo;
+        font-family: $fraunces;
+        color: $pale-orange;
+        margin-bottom: 2rem;
+    }
+
+    .how-card__title {
+        font-size: $twentyeight;
+        font-family: $fraunces;
+        color: $light-cream;
+        margin-bottom: 3rem;
+    }
+
+    .how-card__description {
+        font-size: $fifteen;
+        font-family: $barlow;
+        color: $light-cream;
+        line-height: $line-height-three;
+        text-align: center;
+        width: 85vw;
+    }
+}
