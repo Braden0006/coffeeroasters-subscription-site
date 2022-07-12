@@ -1,0 +1,47 @@
+@import '../Variables/Variables.scss';
+
+.quality {
+    width: 90vw;
+    margin-top: 10rem;
+    height: 58.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .quality__img {
+        z-index: 10;
+        position: absolute;
+        width: 80%;
+        border-radius: 1rem;
+    }
+
+    .quality-background {
+        background-color: $light-dark-grey-blue;
+        height: 58.7rem;
+        position: relative;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        bottom: -60px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+
+        .quality__title {
+            font-size: $twentyeight;
+            font-family: $fraunces;
+            color: $light-cream;
+            text-align: center;
+            margin: 8rem 0rem 2rem 0rem;
+        }
+
+        .quality__description {
+            font-size: $fifteen;
+            font-family: $barlow;
+            line-height: $line-height-twentyfive;
+            text-align: center;
+            color: $transparent-light-cream;
+            width: 85%;            
+        }
+    }
+}

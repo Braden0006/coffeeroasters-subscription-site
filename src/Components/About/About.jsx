@@ -1,6 +1,7 @@
 import React from "react";
 
 import Commitment from "../Commitment/Commitment";
+import Quality from "../Quality/Quality";
 
 import "./About.css";
 
@@ -18,6 +19,7 @@ export default function About() {
       </section>
 
       <Commitment />
+      <Quality />
     </>
   );
 }
