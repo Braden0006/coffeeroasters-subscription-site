@@ -1,0 +1,11 @@
+@import '../Variables/Variables.scss';
+
+.why-us-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 38.2rem;
+    width: 80vw;
+    background-color: $dark-cyan;
+}

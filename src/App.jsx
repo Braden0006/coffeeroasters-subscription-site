@@ -7,6 +7,7 @@ import Collection from "./Components/Collection/Collection";
 import WhyUs from "./Components/WhyUs/WhyUs";
 import HowItWorks from "./Components/HowItWorks/HowItWorks";
 import About from "./Components/About/About";
+import Subscribe from "./Components/Subscribe/Subscribe";
 import Footer from "./Components/Footer/Footer";
 
 import "./App.css";
@@ -46,6 +47,17 @@ function App() {
             </>
           }
         ></Route>
+
+        <Route path="/subscribe" element={
+          <>
+            <section className="app-subscribe">
+              <Navbar />
+              <Subscribe />
+            </section>
+          </>
+        }>
+
+        </Route>
       </Routes>
 
       <section className="app-footer">
