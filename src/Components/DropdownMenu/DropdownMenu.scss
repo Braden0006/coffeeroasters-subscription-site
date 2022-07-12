@@ -1,20 +1,23 @@
 @import '../Variables/Variables.scss';
 
 .drop-menu {
-    width: 95vw;
+    width: 90vw;
     display: flex;
     flex-direction: column;
+    margin-bottom: 8rem;
     align-items: center;
 
     .drop-menu__title-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
 
         .drop-menu__title {
             font-size: $twentyfour;
             font-family: $fraunces;
             color: $grey;
+            width: 65%;
         }
     }
 
