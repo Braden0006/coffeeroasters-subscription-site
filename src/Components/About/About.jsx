@@ -2,6 +2,7 @@ import React from "react";
 
 import Commitment from "../Commitment/Commitment";
 import Quality from "../Quality/Quality";
+import HQ from "../HQ/HQ";
 
 import "./About.css";
 
@@ -20,6 +21,7 @@ export default function About() {
 
       <Commitment />
       <Quality />
+      <HQ />
     </>
   );
 }

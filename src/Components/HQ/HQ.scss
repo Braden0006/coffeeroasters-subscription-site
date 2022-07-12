@@ -1,0 +1,12 @@
+@import '../Variables/Variables.scss';
+
+.hq {
+    display: flex;
+    flex-direction: column;
+
+    .hq__title {
+        font-family: $fraunces;
+        font-size: $twentyfour;
+        color: $grey;
+    }
+}
