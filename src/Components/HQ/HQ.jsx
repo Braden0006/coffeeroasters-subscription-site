@@ -4,6 +4,7 @@ import "./HQ.css";
 
 import HQUnitedKingdom from "../HQUnitedKingdom/HQUnitedKingdom";
 import HQCanada from "../HQCanada/HQCanada";
+import HQAustralia from "../HQAustralia/HQAustralia";
 
 export default function HQ() {
   return (
@@ -13,6 +14,7 @@ export default function HQ() {
       </section>
       <HQUnitedKingdom />
       <HQCanada />
+      <HQAustralia />
     </>
   );
 }
