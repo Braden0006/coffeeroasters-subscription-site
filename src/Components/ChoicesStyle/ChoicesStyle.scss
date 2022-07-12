@@ -1,0 +1,35 @@
+@import '../Variables/Variables.scss';
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+
+    .choices__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0rem 0rem 1.5rem 0rem;
+        padding: 3rem 2rem;
+        background-color: #9797971a;
+        border-radius: 1rem;
+
+        .choices__card__title {
+            font-family: $fraunces;
+            font-size: $twentyfour;
+            color: $dark-grey-blue;
+        }
+
+        .choices__card__info {
+            font-family: $barlow;
+            font-size: $sixteen;
+            line-height: $line-height-twentyfive;
+            margin-top: 1rem;
+        }
+    }
+}
+
+.choice-card-one {
+    margin-top: 3rem !important;
+}

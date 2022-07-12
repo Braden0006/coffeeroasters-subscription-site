@@ -1,6 +1,9 @@
 import React from "react";
 
 import HowItWorksTwo from "../HowItWorksDark/HowItWorksDark";
+import Questions from "../Questions/Questions";
+import DropdownMenu from "../DropdownMenu/DropdownMenu";
+import ChoicesOne from "../ChoicesOne/ChoicesOne";
 
 import "./Subscribe.css";
 
@@ -17,6 +20,22 @@ export default function Subscribe() {
       </section>
 
       <HowItWorksTwo />
+      <Questions>
+        <DropdownMenu
+          title="How do you drink your coffee?"
+          icon={
+            <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
+                fill="#0E8784"
+                fillRule="nonzero"
+              />
+            </svg>
+          }
+        >
+          <ChoicesOne />
+        </DropdownMenu>
+      </Questions>
     </>
   );
 }
