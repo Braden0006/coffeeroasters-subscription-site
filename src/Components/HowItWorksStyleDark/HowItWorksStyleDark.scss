@@ -1,34 +1,34 @@
 @import '../Variables/Variables.scss';
 
-.card-one {
+.card-one__dark {
     margin-top: 7rem !important;
 }
 
-.card-three {
+.card-three__dark {
     margin-bottom: 8rem;
 }
 
-.how-card {
+.how-card__dark {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 5rem;
 
-    .how-card__number {
+    .how-card__dark__number {
         font-size: $seventytwo;
         font-family: $fraunces;
         color: $pale-orange;
         margin-bottom: 2rem;
     }
 
-    .how-card__title {
+    .how-card__dark__title {
         font-size: $twentyeight;
         font-family: $fraunces;
         color: $light-cream;
         margin-bottom: 3rem;
     }
 
-    .how-card__description {
+    .how-card__dark__description {
         font-size: $fifteen;
         font-family: $barlow;
         color: $light-cream;

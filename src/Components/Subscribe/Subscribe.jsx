@@ -5,11 +5,7 @@ import "./Subscribe.css";
 import HowItWorksTwo from "../HowItWorksDark/HowItWorksDark";
 import Questions from "../Questions/Questions";
 import DropdownMenu from "../DropdownMenu/DropdownMenu";
-import ChoicesOne from "../ChoicesOne/ChoicesOne";
-import ChoicesTwo from "../ChoicesTwo/ChoicesTwo";
-import ChoicesThree from "../ChoicesThree/ChoicesThree";
-import ChoicesFour from "../ChoicesFour/ChoicesFour";
-import ChoicesFive from "../ChoicesFive/ChoicesFive";
+import Choices from "../Choices/Choices";
 
 export default function Subscribe() {
   return (
@@ -37,7 +33,14 @@ export default function Subscribe() {
             </svg>
           }
         >
-          <ChoicesOne />
+          <Choices
+            one="Capsule"
+            infoOne="Compatible with Nespresso systems and similar brewers"
+            two="Filter"
+            infoTwo="For pour over or drip methods like Aeropress, Chemex, and V60"
+            three="Espresso"
+            infoThree="Dense and finely ground beans for an intense, flavorful experience"
+          />
         </DropdownMenu>
 
         <DropdownMenu
@@ -52,7 +55,14 @@ export default function Subscribe() {
             </svg>
           }
         >
-          <ChoicesTwo />
+          <Choices
+            one="Sinlge Origin"
+            infoOne="Distinct, high quality coffee from a specific family-owned farm"
+            two="Decaf"
+            infoTwo="Just like regular coffee, except the caffeine has been removed"
+            three="Blended"
+            infoThree="Combination of two or three dark roasted beans of organic coffees"
+          />
         </DropdownMenu>
 
         <DropdownMenu
@@ -67,7 +77,14 @@ export default function Subscribe() {
             </svg>
           }
         >
-          <ChoicesThree />
+          <Choices
+            one="250g"
+            infoOne="Perfect for the solo drinker. Yields about 12 delicious cups."
+            two="500g"
+            infoTwo="Perfect option for a couple. Yields about 40 delectable cups."
+            three="1000g"
+            infoThree="Perfect for offices and events. Yields about 90 delightful cups."
+          />
         </DropdownMenu>
 
         <DropdownMenu
@@ -82,7 +99,14 @@ export default function Subscribe() {
             </svg>
           }
         >
-          <ChoicesFour />
+          <Choices
+            one="Wholebean"
+            infoOne="Best choice if you cherish the full sensory experience"
+            two="Filter"
+            infoTwo="For drip or pour-over coffee methods such as V60 or Aeropress"
+            three="Cafetiére"
+            infoThree="Course ground beans specially suited for french press coffee"
+          />
         </DropdownMenu>
 
         <DropdownMenu
@@ -97,7 +121,14 @@ export default function Subscribe() {
             </svg>
           }
         >
-          <ChoicesFive />
+          <Choices
+            one="Every week"
+            infoOne="$7.20 per shipment. Includes free first-class shipping."
+            two="Every 2 weeks"
+            infoTwo="$9.60 per shipment. Includes free priority shipping."
+            three="Every month"
+            infoThree="$12.00 per shipment. Includes free priority shipping."
+          />
         </DropdownMenu>
       </Questions>
     </>
