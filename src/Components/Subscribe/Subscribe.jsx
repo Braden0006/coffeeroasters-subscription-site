@@ -6,6 +6,7 @@ import HowItWorksTwo from "../HowItWorksDark/HowItWorksDark";
 import Questions from "../Questions/Questions";
 import DropdownMenu from "../DropdownMenu/DropdownMenu";
 import Choices from "../Choices/Choices";
+import OrderSummary from "../OrderSummary/OrderSummary";
 
 export default function Subscribe() {
   return (
@@ -110,7 +111,7 @@ export default function Subscribe() {
         </DropdownMenu>
 
         <DropdownMenu
-          title="Want us to grind them?"
+          title="How often should we deliver?"
           icon={
             <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -131,6 +132,8 @@ export default function Subscribe() {
           />
         </DropdownMenu>
       </Questions>
+
+      <OrderSummary />
     </>
   );
 }

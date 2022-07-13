@@ -1,0 +1,39 @@
+@import '../Variables/Variables.scss';
+
+.order {
+    width: 90vw;
+    height: 38.8rem;
+    background-color: $dark-grey-blue;
+    display: flex;
+    justify-content: center;
+
+    .order__title-container {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+        .order__title {
+            color: $light-cream;
+            font-size: $sixteen;
+            font-family: $barlow;
+            color: $grey;
+            font-weight: 400;
+        }
+    
+        .order__description {
+            color: $light-cream;
+            font-size: $twentyfour;
+            font-family: $fraunces;
+            line-height: $line-height-four;
+            margin-top: 1.5rem;
+
+            .order__description__state {
+                color: $dark-cyan;
+            }
+        }
+    }
+
+}

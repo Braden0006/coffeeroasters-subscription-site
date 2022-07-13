@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+
+import { ChoiceCardContext } from "../../Contexts/ChoiceCardContext";
 
 import "../ChoicesStyle/ChoicesStyle.css";
 
 export default function Choices(props) {
-  const [active, setActive] = useState("");
 
+  const { active, setActive } = useContext(ChoiceCardContext);
+  
   return (
     <div className="choices">
       <div
