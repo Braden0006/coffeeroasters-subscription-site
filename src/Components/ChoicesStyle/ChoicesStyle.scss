@@ -33,3 +33,16 @@
 .choice-card-one {
     margin-top: 3rem !important;
 }
+
+.active {
+    background-color: $dark-cyan !important;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.active-title {
+    color: $light-cream !important;
+}
+
+.active-info {
+    color: $light-cream;
+}
