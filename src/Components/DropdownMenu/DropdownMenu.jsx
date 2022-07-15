@@ -1,10 +1,11 @@
 import React, {useState} from "react";
+import OrderSummary from "../OrderSummary/OrderSummary";
 
 import './DropdownMenu.css';
 
 export default function DropdownMenu(props) {
 
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
 
   return (
     <div className="drop-menu">

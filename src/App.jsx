@@ -10,12 +10,16 @@ import About from "./Components/About/About";
 import Subscribe from "./Components/Subscribe/Subscribe";
 import Footer from "./Components/Footer/Footer";
 
-import { ChoiceCardContext } from "./Contexts/ChoiceCardContext";
+import { ChoiceCardContext } from '../src/Context/ChoiceCardContext';
 
 import "./App.css";
 
 function App() {
-  const [active, setActive] = useState("");
+  const [cardOneActive, setCardOneActive] = useState("");
+  const [cardTwoActive, setCardTwoActive] = useState("");
+  const [cardThreeActive, setCardThreeActive] = useState("");
+  const [cardFourActive, setCardFourActive] = useState("");
+  const [cardFiveActive, setCardFiveActive] = useState("");
 
   return (
     <>
@@ -57,7 +61,20 @@ function App() {
           element={
             <>
               <section className="app-subscribe">
-                <ChoiceCardContext.Provider value={{active, setActive}}>
+                <ChoiceCardContext.Provider
+                  value={{
+                    cardOneActive,
+                    setCardOneActive,
+                    cardTwoActive,
+                    setCardTwoActive,
+                    cardThreeActive,
+                    setCardThreeActive,
+                    cardFourActive,
+                    setCardFourActive,
+                    cardFiveActive,
+                    setCardFiveActive,
+                  }}
+                >
                   <Navbar />
                   <Subscribe />
                 </ChoiceCardContext.Provider>
