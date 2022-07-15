@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["HQStyles.scss","../Variables/Variables.scss"],"names":[],"mappings":"AAEA,IACI,2BAGJ,aACI,aACA,sBACA,mBACA,2BAEA,iCACI,YCHG,iBDIH,UCIM,ODHN,MCbS,QDcT,2BAGJ,mCACI,aACA,mBACA,kBACA,UCFE,ODGF,MCtBS,QDuBT,YCdC,oBDeD","file":"HQStyles.css"}
+{"version":3,"sourceRoot":"","sources":["HQStyles.scss","../Variables/Variables.scss"],"names":[],"mappings":"AAEA,IACI,2BAGJ,aACI,aACA,sBACA,mBACA,2BAEA,iCACI,YCHG,iBDIH,UCIM,ODHN,MCbS,QDcT,2BAGJ,mCACI,aACA,mBACA,kBACA,UCFE,ODGF,MCtBS,QDuBT,YCdC,oBDeD,YCCY","file":"HQStyles.css"}

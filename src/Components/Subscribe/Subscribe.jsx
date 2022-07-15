@@ -11,6 +11,7 @@ import ChoiceThree from "../ChoiceThree/ChoiceThree";
 import ChoiceFour from "../ChoiceFour/ChoiceFour";
 import ChoiceFive from "../ChoiceFive/ChoiceFive";
 import OrderSummary from "../OrderSummary/OrderSummary";
+import HomepageButton from "../HomepageButton/HomepageButton";
 
 export default function Subscribe() {
   return (
@@ -107,6 +108,8 @@ export default function Subscribe() {
       </Questions>
 
       <OrderSummary />
+
+      <button className="subscribe-button">Create my plan!</button>
     </>
   );
 }
