@@ -8,9 +8,10 @@ import WhyUs from "./Components/WhyUs/WhyUs";
 import HowItWorks from "./Components/HowItWorks/HowItWorks";
 import About from "./Components/About/About";
 import Subscribe from "./Components/Subscribe/Subscribe";
+import Modal from "./Components/Modal/Modal";
 import Footer from "./Components/Footer/Footer";
 
-import { ChoiceCardContext } from '../src/Context/ChoiceCardContext';
+import { ChoiceCardContext } from "../src/Context/ChoiceCardContext";
 
 import "./App.css";
 
@@ -20,6 +21,9 @@ function App() {
   const [cardThreeActive, setCardThreeActive] = useState("");
   const [cardFourActive, setCardFourActive] = useState("");
   const [cardFiveActive, setCardFiveActive] = useState("");
+  const [cardFivePrice, setCardFivePrice] = useState("");
+
+  const [checkout, setCheckout] = useState(false);
 
   return (
     <>
@@ -73,10 +77,15 @@ function App() {
                     setCardFourActive,
                     cardFiveActive,
                     setCardFiveActive,
+                    checkout,
+                    setCheckout,
+                    cardFivePrice,
+                    setCardFivePrice,
                   }}
                 >
                   <Navbar />
                   <Subscribe />
+                  <Modal checkout={checkout} />
                 </ChoiceCardContext.Provider>
               </section>
             </>

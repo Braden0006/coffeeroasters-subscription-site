@@ -29,12 +29,6 @@
 }
 
 .subscribe-button {
-    font-family: $fraunces;
-    font-size: $eighteen;
-    color: $light-cream;
-    background-color: $dark-cyan;
-    border: none;
-    border-radius: 0.5rem;
-    padding: 1.5rem 3rem;
+    @include button-style;
     margin-top: 6rem;
 }

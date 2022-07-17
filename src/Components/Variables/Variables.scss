@@ -27,3 +27,33 @@ $twelve: 1.2rem;
 $line-height-four: 4rem;
 $line-height-three: 3rem;
 $line-height-twentyfive: 2.5rem;
+
+// button
+@mixin button-style {
+    font-family: $fraunces;
+    font-size: $eighteen;
+    color: $light-cream;
+    background-color: $dark-cyan;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1.5rem 3rem;
+}
+
+// Order description
+@mixin order-description {
+    color: $light-cream;
+    font-size: $twentyfour;
+    font-family: $fraunces;
+    line-height: $line-height-four;
+    margin-top: 1.5rem;
+    width: 90%;
+}
+
+@mixin order-description-dark {
+    color: $grey;
+    font-size: $twentyfour;
+    font-family: $fraunces;
+    line-height: $line-height-four;
+    margin-top: 1.5rem;
+    width: 85%;
+}

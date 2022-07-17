@@ -24,12 +24,7 @@
         }
     
         .order__description {
-            color: $light-cream;
-            font-size: $twentyfour;
-            font-family: $fraunces;
-            line-height: $line-height-four;
-            margin-top: 1.5rem;
-            width: 90%;
+            @include order-description;
 
             .order__description__state {
                 color: $dark-cyan;

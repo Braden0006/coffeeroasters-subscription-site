@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import "./Subscribe.css";
+
+import { ChoiceCardContext } from "../../Context/ChoiceCardContext";
 
 import HowItWorksTwo from "../HowItWorksDark/HowItWorksDark";
 import Questions from "../Questions/Questions";
@@ -14,6 +16,9 @@ import OrderSummary from "../OrderSummary/OrderSummary";
 import HomepageButton from "../HomepageButton/HomepageButton";
 
 export default function Subscribe() {
+
+  const { setCheckout } = useContext(ChoiceCardContext);
+
   return (
     <>
       <section className="subscribe">
@@ -109,7 +114,7 @@ export default function Subscribe() {
 
       <OrderSummary />
 
-      <button className="subscribe-button">Create my plan!</button>
+      <button className="subscribe-button" onClick={() => setCheckout(true)}>Create my plan!</button>
     </>
   );
 }

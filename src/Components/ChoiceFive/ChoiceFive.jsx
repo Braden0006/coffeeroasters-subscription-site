@@ -6,6 +6,7 @@ import { ChoiceCardContext } from "../../Context/ChoiceCardContext";
 
 export default function ChoiceFive(props) {
   const { cardFiveActive, setCardFiveActive } = useContext(ChoiceCardContext);
+  const { setCardFivePrice } = useContext(ChoiceCardContext);
 
   return (
     <div className="choices">
@@ -15,7 +16,9 @@ export default function ChoiceFive(props) {
             ? "choices__card active"
             : "choices__card"
         }
-        onClick={() => setCardFiveActive(props.one)}
+        onClick={() => (
+          setCardFiveActive(props.one), setCardFivePrice("$28.80")
+        )}
       >
         <h2
           className={
@@ -44,7 +47,9 @@ export default function ChoiceFive(props) {
             ? "choices__card active"
             : "choices__card"
         }
-        onClick={() => setCardFiveActive(props.two)}
+        onClick={() => (
+          setCardFiveActive(props.two), setCardFivePrice("$19.20")
+        )}
       >
         <h2
           className={
@@ -73,7 +78,9 @@ export default function ChoiceFive(props) {
             ? "choices__card active"
             : "choices__card"
         }
-        onClick={() => setCardFiveActive(props.three)}
+        onClick={() => (
+          setCardFiveActive(props.three), setCardFivePrice("$12.00")
+        )}
       >
         <h2
           className={

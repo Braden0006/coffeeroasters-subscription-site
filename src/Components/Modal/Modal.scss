@@ -1,0 +1,73 @@
+@import "../Variables/Variables.scss";
+
+.modal {
+  background: $grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modal__content {
+    width: 85%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $light-cream;
+    border-radius: 1rem;
+
+    .modal__content__button {
+      @include button-style;
+      width: 85%;
+    }
+
+    .modal__content__title {
+      width: 100%;
+      background: $light-dark-grey-blue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 9rem;
+      color: $light-cream;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+
+      .modal__content__title-title {
+        font-size: $twentyeight;
+        font-family: $fraunces;
+        width: 90%;
+      }
+    }
+
+    .modal__content__body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 3rem;
+      height: 75vh;
+      justify-content: space-evenly;
+
+      .modal__content__body__summary {
+        @include order-description-dark;
+
+        .modal__content__body__summary-word {
+          color: $dark-cyan;
+        }
+      }
+
+      .modal__content__body__question {
+        font-size: $fifteen;
+        font-family: $barlow;
+        line-height: $line-height-three;
+        margin-bottom: 2.5rem;
+        width: 85%;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
