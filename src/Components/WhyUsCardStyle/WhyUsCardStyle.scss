@@ -20,21 +20,55 @@
         background-color: $dark-cyan;
         border-radius: 1rem;
 
-        .why-us-card__title {
-            font-family: $fraunces;
-            font-size: $twentyfour;
-            color: $light-cream;
-            margin-top: 5rem;
-            margin-bottom: 2rem;
-        }
+        .why-us-card__info-container {
 
-        .why-us-card__description {
-            color: $light-cream;
-            text-align: center;
-            width: 55vw;
-            font-size: $fifteen;
-            font-family: $barlow;
-            line-height: $line-height-three;
+            .why-us-card__info__title {
+                font-family: $fraunces;
+                font-size: $twentyfour;
+                color: $light-cream;
+                margin-top: 5rem;
+                margin-bottom: 2rem;
+            }
+    
+            .why-us-card__info__description {
+                color: $light-cream;
+                text-align: center;
+                width: 55vw;
+                font-size: $fifteen;
+                font-family: $barlow;
+                line-height: $line-height-three;
+            }
+        }
+    }
+}
+
+// Media query for tablet 
+@media screen and (min-width: 768px) {
+    .why-us-card-container {
+
+        .why-us-card {
+            flex-direction: row;
+            height: 18rem;
+            width: 75vw;
+            justify-content: space-evenly;
+
+            .why-us-card__info-container {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                height: 100%;
+                width: 45vw;
+
+                .why-us-card__info__title {
+                    margin-top: 0rem;
+                }
+
+                .why-us-card__info__description {
+                    width: auto;
+                    text-align: left;
+                }
+            }
         }
     }
 }

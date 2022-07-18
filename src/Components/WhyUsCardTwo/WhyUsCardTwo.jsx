@@ -15,11 +15,13 @@ export default function WhyUsCardTwo() {
             />
           </svg>
         </span>
-        <h2 className="why-us-card__title">Exclusive benefits</h2>
-        <p className="why-us-card__description">
-          Special offers and swag when you subscribe, including 30% off your
-          first shipment.
-        </p>
+        <div className="why-us-card__info-container">
+          <h2 className="why-us-card__info__title">Exclusive benefits</h2>
+          <p className="why-us-card__info__description">
+            Special offers and swag when you subscribe, including 30% off your
+            first shipment.
+          </p>
+        </div>
       </div>
     </section>
   );

@@ -15,11 +15,13 @@ export default function WhyUsCardOne() {
             />
           </svg>
         </span>
-        <h2 className="why-us-card__title">Best quality</h2>
-        <p className="why-us-card__description">
-          Discover an endless variety of the world’s best artisan coffee from
-          each of our roasters.
-        </p>
+        <div className="why-us-card__info-container">
+          <h2 className="why-us-card__info__title">Best quality</h2>
+          <p className="why-us-card__info__description">
+            Discover an endless variety of the world’s best artisan coffee from
+            each of our roasters.
+          </p>
+        </div>
       </div>
     </section>
   );

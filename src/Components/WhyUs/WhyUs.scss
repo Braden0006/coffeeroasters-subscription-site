@@ -34,5 +34,28 @@
             }
         }
     }
+}
 
+// Media query for tablet 
+@media screen and (min-width: 768px) {
+    .why-us {
+
+        .why-us-background {
+            height: 59rem;
+
+            .why-us__intro {
+                background: $light-dark-grey-blue;
+                padding-bottom: 0rem;
+
+                .why-us__intro__title {
+                    font-size: $thirtytwo;
+                    margin: 6rem 0rem 2rem 0rem;
+                }
+
+                .why-us__intro__info {
+                    width: 65vw;
+                }
+            }
+        }
+    }
 }

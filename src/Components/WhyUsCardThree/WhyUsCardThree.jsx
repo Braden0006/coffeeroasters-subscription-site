@@ -15,11 +15,13 @@ export default function WhyUsCardThree() {
             />
           </svg>
         </span>
-        <h2 className="why-us-card__title">Free shipping</h2>
-        <p className="why-us-card__description">
-          We cover the cost and coffee is delivered fast. Peak freshness:
-          guaranteed.
-        </p>
+        <div className="why-us-card__info-container">
+          <h2 className="why-us-card__info__title">Free shipping</h2>
+          <p className="why-us-card__info__description">
+            We cover the cost and coffee is delivered fast. Peak freshness:
+            guaranteed.
+          </p>
+        </div>
       </div>
     </section>
   );
