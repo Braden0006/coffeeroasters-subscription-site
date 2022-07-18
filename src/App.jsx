@@ -25,6 +25,10 @@ function App() {
 
   const [checkout, setCheckout] = useState(false);
 
+  if (checkout) {
+    document.body.style.overflowY = 'hidden';
+  }
+
   return (
     <>
       <Routes>
