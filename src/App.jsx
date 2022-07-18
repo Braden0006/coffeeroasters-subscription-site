@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Navbar from "./Components/Navbar/Navbar";
@@ -33,6 +33,12 @@ function App() {
   } else {
     document.body.style.overflowY = 'auto';
   }
+
+  useEffect(() => {
+    if (window.innerWidth > 767) {
+      setMenuActive(true);
+    }
+  })
 
   return (
     <>

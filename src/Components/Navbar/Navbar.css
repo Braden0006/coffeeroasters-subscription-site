@@ -1,1 +1,1 @@
-.navbar{display:flex;width:90vw;justify-content:space-between;margin:2.5rem 0rem 5rem 0rem}/*# sourceMappingURL=Navbar.css.map */
+.navbar{display:flex;width:90vw;justify-content:space-between;margin:2.5rem 0rem 5rem 0rem}@media screen and (min-width: 768px){.navbar{align-items:center;margin:4rem 0rem 5rem 0rem}.navbar .navbar__logo .navbar__logo-logo{height:2.6rem;width:23.6rem}.navbar__menu{display:none}}/*# sourceMappingURL=Navbar.css.map */

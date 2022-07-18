@@ -1,1 +1,1 @@
-.navbar-close{display:flex;width:90vw;justify-content:space-between;margin:2.5rem 0rem 5rem 0rem}/*# sourceMappingURL=NavbarClose.css.map */
+.navbar-close{display:flex;width:90vw;justify-content:space-between;margin:2.5rem 0rem 5rem 0rem}@media screen and (min-width: 768px){.navbar-close{display:none}.navbar-close .navbar-close__logo{display:none}.navbar-close .navbar-close__close{display:none}}/*# sourceMappingURL=NavbarClose.css.map */

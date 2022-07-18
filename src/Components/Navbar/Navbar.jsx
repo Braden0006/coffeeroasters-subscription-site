@@ -13,6 +13,7 @@ export default function Navbar() {
       <nav className="navbar">
         <div className="navbar__logo">
           <svg
+            className="navbar__logo-logo"
             width="163"
             height="18"
             viewBox="0 0 163 18"
@@ -43,9 +44,8 @@ export default function Navbar() {
             />
           </svg>
         </div>
+        <HamburgerMenu />
       </nav>
-
-      <HamburgerMenu />
     </>
   );
 }
