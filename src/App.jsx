@@ -12,6 +12,7 @@ import Modal from "./Components/Modal/Modal";
 import Footer from "./Components/Footer/Footer";
 
 import { ChoiceCardContext } from "../src/Context/ChoiceCardContext";
+import { NavbarContext } from "../src/Context/NavbarContext";
 
 import "./App.css";
 
@@ -25,8 +26,12 @@ function App() {
 
   const [checkout, setCheckout] = useState(false);
 
-  if (checkout) {
-    document.body.style.overflowY = 'hidden';
+  const [menuActive, setMenuActive] = useState(false);
+
+  if (checkout || menuActive) {
+    document.body.style.overflowY = "hidden";
+  } else {
+    document.body.style.overflowY = 'auto';
   }
 
   return (
@@ -35,7 +40,7 @@ function App() {
         <Route
           path="/"
           element={
-            <>
+            <ChoiceCardContext.Provider value={{ menuActive, setMenuActive }}>
               <section className="app-home">
                 <Navbar />
                 <Homepage />
@@ -49,21 +54,20 @@ function App() {
               <section className="app-how">
                 <HowItWorks />
               </section>
-            </>
+            </ChoiceCardContext.Provider>
           }
         ></Route>
         <Route
           path="/about"
           element={
-            <>
+            <ChoiceCardContext.Provider value={{ menuActive, setMenuActive }}>
               <section className="app-about">
                 <Navbar />
                 <About />
               </section>
-            </>
+            </ChoiceCardContext.Provider>
           }
         ></Route>
-
         <Route
           path="/subscribe"
           element={
@@ -85,6 +89,8 @@ function App() {
                     setCheckout,
                     cardFivePrice,
                     setCardFivePrice,
+                    menuActive,
+                    setMenuActive,
                   }}
                 >
                   <Navbar />

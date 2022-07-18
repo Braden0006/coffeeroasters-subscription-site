@@ -1,0 +1,32 @@
+@import '../Variables/Variables.scss';
+
+.menu {
+    position: fixed;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.528470763305322) 0%, rgba(255,255,255,1) 40%);
+    top: 0;
+    bottom: 0;
+    display: flex;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+
+    .menu__list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+        margin-top: 4rem;
+
+        .menu__list-item {
+            font-size: $twentyfour;
+            font-family: $fraunces;
+            color: $dark-grey-blue;
+            margin-bottom: 3rem;
+        }
+    }
+}
