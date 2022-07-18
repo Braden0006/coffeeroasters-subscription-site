@@ -11,3 +11,21 @@
         font-family: $fraunces;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .how {
+        align-items: flex-start;
+
+        .how__title {
+            color: $grey;
+            margin-bottom: 4rem;
+        }
+
+        .how__cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 4rem;
+            margin: 4rem 0rem 4rem 0rem;
+        }
+    }
+}

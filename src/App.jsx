@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
+import MediaQuery from "react-responsive";
 
 import Navbar from "./Components/Navbar/Navbar";
 import Homepage from "./Components/Homepage/Homepage";
 import Collection from "./Components/Collection/Collection";
 import WhyUs from "./Components/WhyUs/WhyUs";
 import HowItWorks from "./Components/HowItWorks/HowItWorks";
+import HowItWorksTablet from "./ResponsiveComponents/HowItWorksTablet";
 import About from "./Components/About/About";
 import Subscribe from "./Components/Subscribe/Subscribe";
 import Modal from "./Components/Modal/Modal";
@@ -31,15 +33,15 @@ function App() {
   if (checkout) {
     document.body.style.overflowY = "hidden";
   } else {
-    document.body.style.overflowY = 'auto';
+    document.body.style.overflowY = "auto";
   }
 
   useEffect(() => {
     if (window.innerWidth > 767) {
       setMenuActive(true);
-      document.body.style.overFlow = 'auto';
+      document.body.style.overFlow = "auto";
     }
-  })
+  });
 
   return (
     <>
@@ -59,7 +61,13 @@ function App() {
                 <WhyUs />
               </section>
               <section className="app-how">
-                <HowItWorks />
+                <MediaQuery maxWidth={767}>
+                  <HowItWorks />
+                </MediaQuery>
+
+                <MediaQuery minWidth={768}>
+                  <HowItWorksTablet />
+                </MediaQuery>
               </section>
             </ChoiceCardContext.Provider>
           }
