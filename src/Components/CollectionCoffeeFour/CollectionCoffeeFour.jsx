@@ -9,10 +9,12 @@ export default function CollectionCoffeeFour() {
     <div className="collection__coffee-four-container">
       <div className="collection__coffee-four">
         <img className="collection__coffee-four__img" src={Danche} alt="" />
-        <h2 className="collection__coffee-four__name">Danche</h2>
-        <p className="collection__coffee-four__info">
-          Ethiopian hand-harvested blend densely packed with vibrant fruit notes
-        </p>
+        <div className="collection__coffee-four__description-container">
+          <h2 className="collection__coffee-four__description__name">Danche</h2>
+          <p className="collection__coffee-four__description__info">
+            Ethiopian hand-harvested blend densely packed with vibrant fruit notes
+          </p>
+        </div>
       </div>
     </div>
   );

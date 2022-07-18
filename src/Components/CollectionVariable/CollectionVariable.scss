@@ -13,6 +13,12 @@
     margin-bottom: 3rem;
 }
 
+@mixin collection-coffee__description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @mixin collection-coffee__name {
     font-size: $twentyfour;
     font-family: $fraunces;
@@ -26,4 +32,27 @@
     line-height: $line-height-three;
     width: 75vw;
     text-align: center;
+}
+
+// Styling for tablet
+@mixin collection-coffee-tablet {
+    flex-direction: row;
+    height: 16vh;
+    margin-bottom: 8rem;
+}
+
+@mixin collection-coffee__img-tablet {
+    height: 19.3rem;
+    width: 25.5rem;
+}
+
+@mixin collection-coffee__description-container-tablet {
+    height: 100%;
+    width: 35vw;
+    align-items: flex-start;
+}
+
+@mixin collection-coffee__description__info-tablet {
+    text-align: left;
+    width: auto;
 }

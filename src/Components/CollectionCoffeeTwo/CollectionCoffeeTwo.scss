@@ -9,12 +9,39 @@
             @include collection-coffee__img;
         }
 
-        .collection__coffee-two__name {
-            @include collection-coffee__name;
-        }
+        .collection__coffee-two__description-container {
+            @include collection-coffee__description-container;
 
-        .collection__coffee-two__info {
-            @include collection-coffee__info;
+            .collection__coffee-two__description__name {
+                @include collection-coffee__name;
+            }
+    
+            .collection__coffee-two__description__info {
+                @include collection-coffee__info;
+            }
+        }
+    }
+}
+
+// Media query for tablet
+@media screen and (min-width: 768px) {
+
+    .collection__coffee-two-container {
+    
+        .collection__coffee-two {
+            @include collection-coffee-tablet;
+
+            .collection__coffee-two__img {
+                @include collection-coffee__img-tablet;
+            }
+
+            .collection__coffee-two__description-container {
+                @include collection-coffee__description-container-tablet;
+
+                .collection__coffee-two__description__info {
+                    @include collection-coffee__description__info-tablet;
+                }
+            }
         }
     }
 }

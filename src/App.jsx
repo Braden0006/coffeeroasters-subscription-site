@@ -28,7 +28,7 @@ function App() {
 
   const [menuActive, setMenuActive] = useState(false);
 
-  if (checkout || menuActive) {
+  if (checkout) {
     document.body.style.overflowY = "hidden";
   } else {
     document.body.style.overflowY = 'auto';
@@ -37,6 +37,7 @@ function App() {
   useEffect(() => {
     if (window.innerWidth > 767) {
       setMenuActive(true);
+      document.body.style.overFlow = 'auto';
     }
   })
 
