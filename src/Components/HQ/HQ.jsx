@@ -12,9 +12,11 @@ export default function HQ() {
       <section className="hq">
         <h2 className="hq__title">Our headquarters</h2>
       </section>
-      <HQUnitedKingdom />
-      <HQCanada />
-      <HQAustralia />
+      <div className="hq__cards">
+        <HQUnitedKingdom />
+        <HQCanada />
+        <HQAustralia />
+      </div>
     </>
   );
 }

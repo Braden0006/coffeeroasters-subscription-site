@@ -10,3 +10,22 @@
         color: $grey;
     }
 }
+
+// Media query for tablet
+@media screen and (min-width: 768px) {
+    .hq {
+        width: 100vw;
+
+        .hq__title {
+            margin: 0rem 0rem 3.5rem 4rem;
+        }
+    }
+
+    .hq__cards {
+        display: flex;
+        width: 100vw;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+}

@@ -27,3 +27,19 @@
         line-height: $line-height-three;
     }
 }
+
+// Media query for tablet
+@media screen and (min-width: 768px) {
+    .hq-location {
+        align-items: flex-start;
+        margin: 4rem 4rem 0rem 4rem !important;
+
+        .hq-location__title {
+            font-size: $twentyfour;
+        }
+
+        .hq-location__address {
+            text-align: left;
+        }
+    }
+}
