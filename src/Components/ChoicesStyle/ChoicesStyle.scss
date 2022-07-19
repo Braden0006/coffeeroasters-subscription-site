@@ -47,3 +47,25 @@
 .active-info {
     color: $light-cream;
 }
+
+// Media query for tablet 
+@media screen and (min-width: 768px) {
+    .choices {
+        flex-direction: row;
+        gap: 2rem;
+
+        .choices__card {
+            width: 25rem;
+            height: 23.3rem;
+            justify-content: flex-start;
+
+            .choices__card__title {
+                margin-bottom: 1rem;
+            }
+
+            .choices__card__info {
+                width: 90%;
+            }
+        }
+    }
+}
