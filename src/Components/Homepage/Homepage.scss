@@ -59,3 +59,25 @@
         }
     }
 }
+
+// Media query for desktop
+@media screen and (min-width: 1024px) {
+    .homepage {
+        background-image: url('../Background-img/Desktop/image-hero-coffeepress.jpg');
+        background-size: cover;
+        height: 60rem;
+
+        .homepage-container {
+            width: 85%;
+
+            .homepage__title {
+                font-size: $seventytwo;
+            }
+
+            .homepage__info {
+                font-size: $sixteen;
+                width: 50%
+            }
+        }
+    }
+}
