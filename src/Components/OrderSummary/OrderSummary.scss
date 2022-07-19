@@ -3,7 +3,7 @@
 .order {
     width: 90vw;
     height: 38.8rem;
-    background-color: $dark-grey-blue;
+    background-color: $light-dark-grey-blue;
     display: flex;
     justify-content: center;
 
@@ -31,5 +31,16 @@
             }
         }
     }
+}
 
+// Media query for tablet
+@media screen and (min-width: 768px) {
+    .order {
+        height: 20.8rem;
+        border-radius: 1rem;
+
+        .order__description {
+            width: auto !important;
+        }
+    }
 }
