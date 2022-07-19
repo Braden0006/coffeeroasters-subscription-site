@@ -1,10 +1,12 @@
 import React, { useContext } from "react";
+import MediaQuery from "react-responsive";
 
 import "./Subscribe.css";
 
 import { ChoiceCardContext } from "../../Context/ChoiceCardContext";
 
-import HowItWorksTwo from "../HowItWorksDark/HowItWorksDark";
+import HowItWorksDark from "../HowItWorksDark/HowItWorksDark";
+import HowItWorksDarkTablet from "../../ResponsiveComponents/HowItWorksDarkTablet/HowItWorksDarkTablet";
 import Questions from "../Questions/Questions";
 import DropdownMenu from "../DropdownMenu/DropdownMenu";
 import ChoiceOne from "../ChoiceOne/ChoiceOne";
@@ -16,7 +18,6 @@ import OrderSummary from "../OrderSummary/OrderSummary";
 import HomepageButton from "../HomepageButton/HomepageButton";
 
 export default function Subscribe() {
-
   const { setCheckout } = useContext(ChoiceCardContext);
 
   return (
@@ -26,13 +27,19 @@ export default function Subscribe() {
           <h2 className="subscribe__info__title">Create a plan</h2>
           <p className="subscribe__info__description">
             Build a subscription plan that best fits your needs. We offer an
-            assortment of the best artisan coffees from around the globe delivered
-            fresh to your door.
+            assortment of the best artisan coffees from around the globe
+            delivered fresh to your door.
           </p>
         </div>
       </section>
 
-      <HowItWorksTwo />
+      <MediaQuery maxWidth={767}>
+        <HowItWorksDark />
+      </MediaQuery>
+
+      <MediaQuery minWidth={767}>
+        <HowItWorksDarkTablet />
+      </MediaQuery>
       <Questions>
         <DropdownMenu
           title="How do you drink your coffee?"
@@ -116,7 +123,9 @@ export default function Subscribe() {
 
       <OrderSummary />
 
-      <button className="subscribe-button" onClick={() => setCheckout(true)}>Create my plan!</button>
+      <button className="subscribe-button" onClick={() => setCheckout(true)}>
+        Create my plan!
+      </button>
     </>
   );
 }

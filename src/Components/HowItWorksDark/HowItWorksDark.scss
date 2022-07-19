@@ -9,3 +9,23 @@
     margin-top: 10rem;
     background: $light-dark-grey-blue;
 }
+
+// Media query for tablet
+@media screen and (min-width: 768px) {
+    .howTwo {
+        padding: 8rem 0rem 8rem 0rem;
+        align-items: center;
+
+        .howTwo__line {
+            width: 90vw;
+        }
+
+        .howTwo__cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 2rem;
+            width: 90vw;
+            margin-top: 4rem;
+        }
+    }
+}

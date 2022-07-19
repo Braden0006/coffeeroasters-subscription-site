@@ -37,3 +37,28 @@
         width: 85vw;
     }
 }
+
+// Medi query for tablet
+@media screen and (min-width: 768px) {
+    .how-card__dark {
+        margin: 0rem;
+        align-items: flex-start;
+
+        .how-card__dark__title {
+            width: 75%;
+        }
+
+        .how-card__dark__description {
+            width: 87%;
+            text-align: left;
+        }
+    }
+
+    .card-one__dark {
+        margin: 0rem !important;
+    }
+
+    .card-three__dark {
+        margin: 0rem !important;
+    }
+}
