@@ -1,13 +1,21 @@
 import React from "react";
+import MediaQuery from "react-responsive";
 
 import QualityImg from "/src/images/image-quality.jpg";
+import TabletQualityImg from '/src/images/Tablet/image-quality.jpg';
 
 import "./Quality.css";
 
 export default function Quality() {
   return (
     <section className="quality">
-      <img className="quality__img" src={QualityImg} alt="" />
+      <MediaQuery maxWidth={767}>
+        <img className="quality__img" src={QualityImg} alt="" />
+      </MediaQuery>
+
+      <MediaQuery minWidth={768}>
+        <img className="quality__img" src={TabletQualityImg} alt="" />
+      </MediaQuery>
       <div className="quality-background">
         <h2 className="quality__title">Uncompromising quality</h2>
         <p className="quality__description">

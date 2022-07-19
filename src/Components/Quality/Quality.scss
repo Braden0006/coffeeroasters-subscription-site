@@ -45,3 +45,25 @@
         }
     }
 }
+
+// Media query for tablet
+@media screen and (min-width: 768px) {
+    .quality {
+        height: 78vh;
+
+        .quality-background {
+            height: 48.8rem;
+            bottom: -168px;
+            justify-content: flex-end;
+
+            .quality__title {
+                font-size: $thirtytwo;
+                margin-top: 0rem;
+            }
+
+            .quality__description {
+                margin-bottom: 6rem;
+            }
+        }
+    }
+}
