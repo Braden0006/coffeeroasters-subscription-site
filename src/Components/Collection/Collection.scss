@@ -24,3 +24,18 @@
         }
     }
 }
+
+// Media query for desktop 
+@media screen and (min-width: 1024px) {
+    .collection {
+        height: 60vh;
+        margin-top: 4rem;
+
+        .collection__cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+            margin-top: -2rem;
+        }
+    }
+}

@@ -56,3 +56,18 @@
     text-align: left;
     width: auto;
 }
+
+// Styling for desktop
+@mixin collection-coffee-desktop {
+    flex-direction: column;
+    width: 50%;
+}
+
+@mixin collection-coffee__description-container-desktop {
+    width: 20vw;
+    align-items: center
+}
+
+@mixin collection-coffee__description__info-desktop {
+    text-align: center;
+}

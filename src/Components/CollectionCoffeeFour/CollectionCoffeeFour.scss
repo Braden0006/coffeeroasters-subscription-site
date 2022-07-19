@@ -1,47 +1,55 @@
-@import '../CollectionVariable/CollectionVariable.scss';
+@import "../CollectionVariable/CollectionVariable.scss";
 
-.collection__coffee-four-container {
+.collection__coffee-four {
+  @include collection-coffee;
 
-    .collection__coffee-four {
-        @include collection-coffee;
+  .collection__coffee-four__img {
+    @include collection-coffee__img;
+  }
 
-        .collection__coffee-four__img {
-            @include collection-coffee__img;
-        }
+  .collection__coffee-four__description-container {
+    @include collection-coffee__description-container;
 
-        .collection__coffee-four__description-container {
-            @include collection-coffee__description-container;
-
-            .collection__coffee-four__description__name {
-                @include collection-coffee__name;
-            }
-    
-            .collection__coffee-four__description__info {
-                @include collection-coffee__info;
-            }
-        }
+    .collection__coffee-four__description__name {
+      @include collection-coffee__name;
     }
+
+    .collection__coffee-four__description__info {
+      @include collection-coffee__info;
+    }
+  }
 }
 
 // Media query for tablet
 @media screen and (min-width: 768px) {
+  .collection__coffee-four {
+    @include collection-coffee-tablet;
 
-    .collection__coffee-four-container {
-    
-        .collection__coffee-four {
-            @include collection-coffee-tablet;
+    .collection__coffee-four__img {
+      @include collection-coffee__img-tablet;
+    }
 
-            .collection__coffee-four__img {
-                @include collection-coffee__img-tablet;
-            }
+    .collection__coffee-four__description-container {
+      @include collection-coffee__description-container-tablet;
 
-            .collection__coffee-four__description-container {
-                @include collection-coffee__description-container-tablet;
+      .collection__coffee-four__description__info {
+        @include collection-coffee__description__info-tablet;
+      }
+    }
+  }
+}
 
-                .collection__coffee-four__description__info {
-                    @include collection-coffee__description__info-tablet;
-                }
-            }
+// Media query for desktop
+@media screen and (min-width: 1024px) {
+  .collection__coffee-four {
+    @include collection-coffee-desktop;
+
+    .collection__coffee-four__description-container {
+        @include collection-coffee__description-container-desktop;
+
+        .collection__coffee-four__description__info {
+            @include collection-coffee__description__info-desktop;
         }
     }
+  }
 }

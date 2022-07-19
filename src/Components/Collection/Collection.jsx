@@ -11,10 +11,12 @@ export default function Collection() {
   return (
     <section className="collection">
       <h1 className="collection__title">our collection</h1>
-      <CollectionCoffeeOne />
-      <CollectionCoffeeTwo />
-      <CollectionCoffeeThree />
-      <CollectionCoffeeFour />
+      <div className="collection__cards">
+        <CollectionCoffeeOne />
+        <CollectionCoffeeTwo />
+        <CollectionCoffeeThree />
+        <CollectionCoffeeFour />
+      </div>
     </section>
   );
 }
