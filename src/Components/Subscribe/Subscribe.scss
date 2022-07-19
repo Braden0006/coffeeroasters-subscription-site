@@ -1,7 +1,7 @@
 @import '../Variables/Variables.scss';
 
 .subscribe {
-    background-image: url('../Background-img/image-hero-blackcup.jpg');
+    background-image: url('../Background-img/Mobile/image-hero-blackcup.jpg');
     background-size: cover;
     height: 40rem;
     width: 90vw;
@@ -11,24 +11,52 @@
     align-items: center;
     justify-content: center;
 
-    .subscribe__title {
-        font-size: $forty;
-        font-family: $fraunces;
-        color: $light-cream;
-    }
+    .subscribe__info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    .subscribe__description {
-        font-size: $fifteen;
-        font-family: $barlow;
-        color: $transparent-light-cream;
-        line-height: $line-height-twentyfive;
-        text-align: center;
-        margin-top: 2rem;
-        width: 90%;
+        .subscribe__info__title {
+            font-size: $forty;
+            font-family: $fraunces;
+            color: $light-cream;
+        }
+    
+        .subscribe__info__description {
+            font-size: $fifteen;
+            font-family: $barlow;
+            color: $transparent-light-cream;
+            line-height: $line-height-twentyfive;
+            text-align: center;
+            margin-top: 2rem;
+            width: 90%;
+        }
     }
 }
 
 .subscribe-button {
     @include button-style;
     margin-top: 6rem;
+}
+
+// Media query for tablet
+@media screen and (min-width: 768px) {
+    .subscribe {
+        background-image: url('../Background-img/Tablet/image-hero-blackcup.jpg');
+        background-size: cover;
+
+        .subscribe__info-container {
+            width: 85%;
+            align-items: flex-start;
+
+            .subscribe__info__title {
+                font-size: $fortyeight;
+            }
+
+            .subscribe__info__description {
+                text-align: left;
+                width: 65%;
+            }
+        }
+    }
 }
