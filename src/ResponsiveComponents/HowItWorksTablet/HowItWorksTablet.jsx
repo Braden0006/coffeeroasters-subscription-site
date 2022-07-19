@@ -1,11 +1,11 @@
 import React from "react";
 
-import HowItWorksCardOne from "../Components/HowItWorksCardOne/HowItWorksCardOne";
-import HowItWorksCardThree from "../Components/HowItWorksCardThree/HowItWorksCardThree";
-import HowItWorksCardTwo from "../Components/HowItWorksCardTwo/HowItWorksCardTwo";
-import HomepageButton from "../Components/HomepageButton/HomepageButton";
+import HowItWorksCardOne from "../../Components/HowItWorksCardOne/HowItWorksCardOne";
+import HowItWorksCardThree from "../../Components/HowItWorksCardThree/HowItWorksCardThree";
+import HowItWorksCardTwo from "../../Components/HowItWorksCardTwo/HowItWorksCardTwo";
+import HomepageButton from "../../Components/HomepageButton/HomepageButton";
 
-import "../Components/HowItWorks/HowItWorks.css";
+import "../../Components/HowItWorks/HowItWorks.css";
 
 export default function HowItWorks() {
   return (

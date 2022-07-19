@@ -7,10 +7,11 @@ import Homepage from "./Components/Homepage/Homepage";
 import Collection from "./Components/Collection/Collection";
 import WhyUs from "./Components/WhyUs/WhyUs";
 import HowItWorks from "./Components/HowItWorks/HowItWorks";
-import HowItWorksTablet from "./ResponsiveComponents/HowItWorksTablet";
+import HowItWorksTablet from "./ResponsiveComponents/HowItWorksTablet/HowItWorksTablet";
 import About from "./Components/About/About";
 import Subscribe from "./Components/Subscribe/Subscribe";
 import Modal from "./Components/Modal/Modal";
+import ModalTablet from "./ResponsiveComponents/ModalTablet/ModalTablet";
 import Footer from "./Components/Footer/Footer";
 
 import { ChoiceCardContext } from "../src/Context/ChoiceCardContext";
@@ -110,7 +111,13 @@ function App() {
                 >
                   <Navbar />
                   <Subscribe />
-                  <Modal checkout={checkout} />
+                  <MediaQuery maxWidth={767}>
+                    <Modal checkout={checkout} />
+                  </MediaQuery>
+
+                  <MediaQuery minWidth={768}>
+                    <ModalTablet checkout={checkout} />
+                  </MediaQuery>
                 </ChoiceCardContext.Provider>
               </section>
             </>
