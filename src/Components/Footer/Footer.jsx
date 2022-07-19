@@ -27,8 +27,8 @@ export default function Footer() {
       </svg>
 
       <ul className="footer__list">
-        <li className="footer__list-item">HOME</li>
-        <li className="footer__list-item">ABOUT US</li>
+        <li className="footer__list-item footer-space">HOME</li>
+        <li className="footer__list-item footer-space">ABOUT US</li>
         <li className="footer__list-item">CREATE YOUR PLAN</li>
       </ul>
       <div className="footer__social">
