@@ -18,9 +18,11 @@ export default function WhyUs() {
               growers to give you a more impactful experience on every level.
             </p>
         </div>
-        <WhyUsCardOne />
-        <WhyUsCardTwo />
-        <WhyUsCardThree />
+        <div className="why-us__cards">
+          <WhyUsCardOne />
+          <WhyUsCardTwo />
+          <WhyUsCardThree />
+        </div>
       </div>
     </section>
   );

@@ -59,3 +59,36 @@
         }
     }
 }
+
+// Media query for desktop
+@media screen and (min-width: 1024px) {
+    .why-us {
+
+        .why-us-background {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .why-us__intro {
+                margin-top: 4rem;
+
+                .why-us__intro__title {
+                    font-size: $forty;
+                }
+
+                .why-us__intro__info {
+                    font-size: $sixteen;
+                    width: 38vw;
+                }
+            }
+        }
+
+        .why-us__cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            gap: 2rem;
+            width: 90%;
+        }
+    }
+}

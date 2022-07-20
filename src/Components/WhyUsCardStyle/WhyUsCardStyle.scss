@@ -1,7 +1,7 @@
 @import '../Variables/Variables.scss';
 
 .card-one {
-    margin-top: 4rem !important;
+    margin-top: 4rem;
 }
 
 .why-us-card-container {
@@ -70,5 +70,37 @@
                 }
             }
         }
+    }
+}
+
+// Media query for desktop
+@media screen and (min-width: 1024px) {
+    .why-us-card-container {
+        margin-top: 0rem;
+
+        .why-us-card {
+            width: auto;
+            height: 38.2rem;
+            flex-direction: column;
+            justify-content: center;
+
+            .why-us-card__img {
+                margin-bottom: 6rem;
+            }
+
+            .why-us-card__info-container {
+                width: auto;
+                align-items: center;
+                height: auto;
+
+                .why-us-card__info__description {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .card-one {
+        margin-top: 3rem !important;
     }
 }
