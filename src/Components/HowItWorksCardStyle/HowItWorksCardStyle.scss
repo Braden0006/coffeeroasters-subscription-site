@@ -61,3 +61,37 @@
         margin-bottom: 0;
     }
 }
+
+// Media query for desktop 
+@media screen and (min-width: 1024px) {
+    .how {
+
+        .how-card {
+
+            .how-card__title {
+                font-size: $thirtytwo;
+                width: 70%;
+            }
+
+            .how-card__description {
+                font-size: $sixteen;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1044px) {
+    .how {
+
+        .how-card {
+
+            .how-card__title {
+                width: 60%;
+            }
+
+            .how-card__description {
+                width: 70%;
+            }
+        }
+    }
+}

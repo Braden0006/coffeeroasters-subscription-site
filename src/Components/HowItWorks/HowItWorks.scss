@@ -29,3 +29,17 @@
         }
     }
 }
+
+// Media query for desktop 
+@media screen and (min-width: 1024px) {
+    .how {
+        
+        .how__title {
+            margin-bottom: 8rem;
+        }
+
+        .how__cards {
+            margin: 8rem 0rem 6rem 0rem;
+        }
+    }
+}

@@ -8,6 +8,7 @@ import Collection from "./Components/Collection/Collection";
 import WhyUs from "./Components/WhyUs/WhyUs";
 import HowItWorks from "./Components/HowItWorks/HowItWorks";
 import HowItWorksTablet from "./ResponsiveComponents/HowItWorksTablet/HowItWorksTablet";
+import HowItWorksDesktop from './ResponsiveComponents/HowItWorksDesktop/HowItWorksDesktop';
 import About from "./Components/About/About";
 import Subscribe from "./Components/Subscribe/Subscribe";
 import Modal from "./Components/Modal/Modal";
@@ -66,8 +67,12 @@ function App() {
                   <HowItWorks />
                 </MediaQuery>
 
-                <MediaQuery minWidth={768}>
+                <MediaQuery minWidth={768} maxWidth={1023}>
                   <HowItWorksTablet />
+                </MediaQuery>
+
+                <MediaQuery minWidth={1024}>
+                  <HowItWorksDesktop />
                 </MediaQuery>
               </section>
             </ChoiceCardContext.Provider>
