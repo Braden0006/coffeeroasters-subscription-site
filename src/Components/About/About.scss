@@ -55,3 +55,36 @@
         }
     }
 }
+
+// Media query for desktop
+@media screen and (min-width: 1024px) {
+    .about {
+        background-image: url('../Background-img/Desktop/image-hero-whitecup.jpg');
+        background-size: cover;
+        height: 45rem;
+
+        .about__info-container {
+
+            .about__info__title {
+                font-size: $forty;
+            }
+
+            .about__info__description {
+                font-size: $sixteen;
+                width: 55%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1044px) {
+    .about {
+
+        .about__info-container {
+
+            .about__info__description {
+                width: 40%;
+            }
+        }
+    }
+}
