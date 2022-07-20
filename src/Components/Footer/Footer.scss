@@ -57,3 +57,31 @@
         margin-right: 3rem;
     }
 }
+
+// Media query for desktop
+@media screen and (min-width: 1024px) {
+    .footer {
+        flex-direction: row;
+        height: 12rem;
+        justify-content: space-evenly;
+
+        .footer__list {
+            display: flex;
+            margin: 0rem;
+        }
+
+        .footer__social {
+            margin: 0rem;
+            width: 25%;
+            justify-content: flex-end;
+            
+            .footer__social__icon {
+                margin-right: 2rem;
+            }
+        }
+
+        .footer-space {
+            margin-right: 3rem;
+        }
+    }
+}
