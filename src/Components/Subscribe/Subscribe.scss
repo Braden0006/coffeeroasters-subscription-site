@@ -60,3 +60,36 @@
         }
     }
 }
+
+// Media query for desktop
+@media screen and (min-width: 1024px) {
+    .subscribe {
+        background-image: url('../Background-img/Desktop/image-hero-blackcup.jpg');
+        background-size: cover;
+
+        .subscribe__info-container {
+
+            .subscribe__info__title {
+                font-size: $seventytwo;
+            }
+
+            .subscribe__info__description {
+                font-size: $sixteen;
+                width: 52%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .subscribe {
+
+        .subscribe__info-container {
+
+            .subscribe__info__description {
+                font-size: $sixteen;
+                width: 40%;
+            }
+        }
+    }
+}
