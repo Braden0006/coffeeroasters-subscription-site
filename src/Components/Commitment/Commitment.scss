@@ -63,3 +63,40 @@
         }
     }
 }
+
+// Media query for desktop
+@media screen and (min-width: 1024px) {
+    .commitment {
+
+        .commitment__img {
+            height: 52rem;
+            width: 45.5rem;
+        }
+
+        .commitment__info-container {
+            justify-content: center;
+
+            .commitment__info__title {
+                font-size: $forty;
+            }
+
+            .commitment__info__description {
+                font-size: $sixteen;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .commitment {
+        width: 80vw;
+        gap: 12rem;
+
+        .commitment__info-container {
+
+            .commitment__info__description {
+                width: 90%;
+            }
+        }
+    }
+}

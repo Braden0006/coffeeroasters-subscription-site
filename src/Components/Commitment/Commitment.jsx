@@ -3,6 +3,7 @@ import MediaQuery from "react-responsive";
 
 import CommitmentImg from "/src/images/image-commitment.jpg";
 import TabletCommitmentImg from '/src/images/Tablet/image-commitment.jpg';
+import DesktopCommitmentImg from '/src/images/Desktop/image-commitment.jpg';
 
 import "./Commitment.css";
 
@@ -13,8 +14,12 @@ export default function Commitment() {
         <img className="commitment__img" src={CommitmentImg} alt="" />
       </MediaQuery>
 
-      <MediaQuery minWidth={768}>
+      <MediaQuery minWidth={768} maxWidth={1023}>
         <img className="commitment__img" src={TabletCommitmentImg} alt="" />
+      </MediaQuery>
+
+      <MediaQuery minWidth={1024}>
+        <img className="commitment__img" src={DesktopCommitmentImg} alt="" />
       </MediaQuery>
       <div className="commitment__info-container">
         <h2 className="commitment__info__title">Our commitment</h2>
