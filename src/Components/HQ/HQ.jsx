@@ -8,15 +8,13 @@ import HQAustralia from "../HQAustralia/HQAustralia";
 
 export default function HQ() {
   return (
-    <>
-      <section className="hq">
-        <h2 className="hq__title">Our headquarters</h2>
-      </section>
+    <section className="hq">
+      <h2 className="hq__title">Our headquarters</h2>
       <div className="hq__cards">
         <HQUnitedKingdom />
         <HQCanada />
         <HQAustralia />
       </div>
-    </>
+    </section>
   );
 }

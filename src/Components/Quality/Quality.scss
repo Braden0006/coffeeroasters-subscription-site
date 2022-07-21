@@ -50,7 +50,7 @@
 // Media query for tablet
 @media screen and (min-width: 768px) {
     .quality {
-        height: 75vh;
+        height: 90vh;
 
         .quality-background {
             height: 48.8rem;
@@ -73,7 +73,8 @@
 // Media query for desktop
 @media screen and (min-width: 1024px) {
     .quality {
-        margin-top: 0rem;
+        margin-top: 10rem;
+        height: 100vh;
 
         .quality__img {
             z-index: 10;

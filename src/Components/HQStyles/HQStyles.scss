@@ -1,7 +1,7 @@
 @import '../Variables/Variables.scss';
 
 .uk {
-    margin-top: 6rem !important;
+    margin-top: 6rem;
 }
 
 .hq-location {
@@ -32,7 +32,7 @@
 @media screen and (min-width: 768px) {
     .hq-location {
         align-items: flex-start;
-        margin: 4rem 4rem 0rem 4rem !important;
+        margin: 4rem 4rem 0rem 4rem;
 
         .hq-location__title {
             font-size: $twentyfour;
@@ -41,5 +41,16 @@
         .hq-location__address {
             text-align: left;
         }
+    }
+}
+
+// Media query for desktop
+@media screen and (min-width: 1024px) {
+    .hq-location {
+        margin: 0;
+    }
+
+    .au {
+        margin-right: 12rem;
     }
 }
