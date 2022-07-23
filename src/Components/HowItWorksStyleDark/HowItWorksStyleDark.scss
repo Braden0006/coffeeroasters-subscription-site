@@ -62,3 +62,17 @@
         margin: 0rem !important;
     }
 }
+
+// Media query for desktop
+@media screen and (min-width: 1024px) {
+    .how-card__dark {
+
+        .how-card__dark__title {
+            font-size: $thirtytwo;
+        }
+
+        .how-card__dark__description {
+            font-size: $sixteen;
+        }
+    }
+}
