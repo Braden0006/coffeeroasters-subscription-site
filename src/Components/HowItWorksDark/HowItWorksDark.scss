@@ -29,3 +29,17 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .howTwo {
+        width: 90vw;
+
+        .howTwo__line {
+            width: 90%;
+        }
+
+        .howTwo__cards {
+            width: 90%;
+        }
+    }
+}
