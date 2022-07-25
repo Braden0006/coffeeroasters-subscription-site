@@ -26,6 +26,11 @@
       width: 85%;
     }
 
+    .modal__content__button:hover {
+      background-color: $button-hover;
+      transition: background-color 0.2s ease-in-out;
+    }
+
     .modal__content__title {
       width: 100%;
       background: $light-dark-grey-blue;
@@ -113,6 +118,12 @@
           .modal__content__body__checkout__button {
             @include button-style;
             width: 45%;
+          }
+
+          .modal__content__body__checkout__button:hover {
+            background-color: $button-hover;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
           }
         }
       }

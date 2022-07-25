@@ -9,3 +9,9 @@
     border-radius: 0.5rem;
     padding: 1.5rem 3rem;
 }
+
+.homepage__button:hover {
+    background-color: $button-hover;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
