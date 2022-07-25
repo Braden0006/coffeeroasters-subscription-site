@@ -1,17 +1,19 @@
-import React, {useState} from "react";
-import OrderSummary from "../OrderSummary/OrderSummary";
+import React, { useState, useContext } from "react";
 
-import './DropdownMenu.css';
+import { ChoiceCardContext } from '../../Context/ChoiceCardContext';
+
+import "./DropdownMenu.css";
 
 export default function DropdownMenu(props) {
-
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="drop-menu">
       <div className="drop-menu__title-container">
         <h2 className="drop-menu__title">{props.title}</h2>
-        <span className="drop-menu__logo" onClick={() => setOpen(!open)}>{props.icon}</span>
+        <span className="drop-menu__logo" onClick={() => setOpen(!open)}>
+          {props.icon}
+        </span>
       </div>
 
       {open && props.children}

@@ -70,3 +70,10 @@
     }
 }
 
+// Media query for desktop
+@media screen and (min-width: 1024px) {
+    .choices {
+        width: 100%;
+    }
+}
+

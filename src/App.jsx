@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 import { Route, Routes } from "react-router-dom";
 import MediaQuery from "react-responsive";
 
@@ -8,7 +9,7 @@ import Collection from "./Components/Collection/Collection";
 import WhyUs from "./Components/WhyUs/WhyUs";
 import HowItWorks from "./Components/HowItWorks/HowItWorks";
 import HowItWorksTablet from "./ResponsiveComponents/HowItWorksTablet/HowItWorksTablet";
-import HowItWorksDesktop from './ResponsiveComponents/HowItWorksDesktop/HowItWorksDesktop';
+import HowItWorksDesktop from "./ResponsiveComponents/HowItWorksDesktop/HowItWorksDesktop";
 import About from "./Components/About/About";
 import Subscribe from "./Components/Subscribe/Subscribe";
 import Modal from "./Components/Modal/Modal";
@@ -16,11 +17,11 @@ import ModalTablet from "./ResponsiveComponents/ModalTablet/ModalTablet";
 import Footer from "./Components/Footer/Footer";
 
 import { ChoiceCardContext } from "../src/Context/ChoiceCardContext";
-import { NavbarContext } from "../src/Context/NavbarContext";
 
 import "./App.css";
 
 function App() {
+  // The five states below are for each card and which sub-card is currently clicked and active
   const [cardOneActive, setCardOneActive] = useState("");
   const [cardTwoActive, setCardTwoActive] = useState("");
   const [cardThreeActive, setCardThreeActive] = useState("");
@@ -28,10 +29,15 @@ function App() {
   const [cardFiveActive, setCardFiveActive] = useState("");
   const [cardFivePrice, setCardFivePrice] = useState("");
 
+  const [ref1Active, setRef1Active] = useState(false);
+
+  // This is for the checkout modal, for when the "Create my plan" button is clicked
   const [checkout, setCheckout] = useState(false);
 
+  // This state is for the menu, to control if its open or closed
   const [menuActive, setMenuActive] = useState(false);
 
+  // Checks to see if the modal is displayed, you can't scroll in the background
   if (checkout) {
     document.body.style.overflowY = "hidden";
   } else {
@@ -112,6 +118,8 @@ function App() {
                     setCardFivePrice,
                     menuActive,
                     setMenuActive,
+                    ref1Active,
+                    setRef1Active,
                   }}
                 >
                   <Navbar />

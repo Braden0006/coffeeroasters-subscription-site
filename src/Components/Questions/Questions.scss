@@ -1,6 +1,58 @@
+@import '../Variables/Variables.scss';
+
 .questions {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10rem;
 }
+
+// Media query for desktop
+@media screen and (min-width: 1024px) {
+    .questions {
+        width: 80vw;
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: repeat(2, 1fr);
+
+        .questions__nav {
+            height: 100%;
+            
+            .questions__nav__list {
+                padding: 0;
+                list-style-type: none;
+                width: 70%;
+
+                .questions__nav__list-item {
+                    margin-bottom: 3rem;
+                    font-size: $twentyfour;
+                    font-family: $fraunces;
+                    color: $grey;
+
+                    .questions__nav__list-item__number {
+                        margin-right: 2rem;
+                        color: $grey;
+                    }
+                }
+
+                .questions__nav__list-item:hover {
+                    color: $dark-grey-blue;
+                    transition: color 0.3s ease-in-out;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    
+    .question-number-active {
+        color: $dark-cyan !important;
+        transition: color 0.5s ease-in-out;
+    }
+
+    .question-active {
+        color: $light-dark-grey-blue !important;
+        transition: color 0.5s ease-in-out;
+    }
+}
+
+

@@ -20,5 +20,19 @@
             width: 65%;
         }
     }
+}
 
+// Media query for desktop
+@media screen and (min-width: 1024px) {
+    .drop-menu {
+        width: 55vw;
+
+        .drop-menu__title-container {
+            
+            .drop-menu__title {
+                font-size: $forty;
+                width: auto;
+            }
+        }
+    }
 }

@@ -51,7 +51,7 @@ export default function HowItWorksDark() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path d="M15.5 23.5H775.5" stroke="#FDD6BA" stroke-width="2" />
+            <path d="M15.5 23.5H775.5" stroke="#FDD6BA" strokeWidth="2" />
             <circle
               cx="15.5"
               cy="23.5"

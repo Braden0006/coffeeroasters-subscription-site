@@ -4,7 +4,7 @@ import "../ChoicesStyle/ChoicesStyle.css";
 
 import { ChoiceCardContext } from "../../Context/ChoiceCardContext";
 
-export default function ChoiceOne(props) {
+const ChoiceOne = (props) => {
   const { cardOneActive, setCardOneActive } = useContext(ChoiceCardContext);
 
   return (
@@ -93,4 +93,6 @@ export default function ChoiceOne(props) {
       </div>
     </div>
   );
-}
+};
+
+export default ChoiceOne;
