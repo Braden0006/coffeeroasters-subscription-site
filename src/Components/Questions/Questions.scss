@@ -11,7 +11,7 @@
 // Media query for desktop
 @media screen and (min-width: 1024px) {
     .questions {
-        width: 80vw;
+        width: 90vw;
         display: grid;
         flex-direction: row;
         grid-template-columns: repeat(2, 1fr);
@@ -56,4 +56,8 @@
     }
 }
 
-
+@media screen and (min-width: 1440px) {
+    .questions {
+        width: 80vw;
+    }
+}
