@@ -79,6 +79,11 @@
             }
         }
     }
+
+    .subscribe-button {
+        position: absolute;
+        right: 0;
+    }
 }
 
 @media screen and (min-width: 1440px) {

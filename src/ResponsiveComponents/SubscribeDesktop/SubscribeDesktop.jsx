@@ -1,20 +1,20 @@
 import React, { useContext } from "react";
 import MediaQuery from "react-responsive";
 
-import "./Subscribe.css";
+import "../../Components/Subscribe/Subscribe.css";
 
 import { ChoiceCardContext } from "../../Context/ChoiceCardContext";
 
-import HowItWorksDark from "../HowItWorksDark/HowItWorksDark";
-import HowItWorksDarkTablet from "../../ResponsiveComponents/HowItWorksDarkTablet/HowItWorksDarkTablet";
-import Questions from "../Questions/Questions";
-import DropdownMenu from "../DropdownMenu/DropdownMenu";
-import ChoiceOne from "../ChoiceOne/ChoiceOne";
-import ChoiceTwo from "../ChoiceTwo/ChoiceTwo";
-import ChoiceThree from "../ChoiceThree/ChoiceThree";
-import ChoiceFour from "../ChoiceFour/ChoiceFour";
-import ChoiceFive from "../ChoiceFive/ChoiceFive";
-import OrderSummary from "../OrderSummary/OrderSummary";
+import HowItWorksDark from "../../Components/HowItWorksDark/HowItWorksDark";
+import HowItWorksDarkTablet from "../HowItWorksDarkTablet/HowItWorksDarkTablet";
+import Questions from "../../Components/Questions/Questions";
+import DropdownMenu from "../../Components/DropdownMenu/DropdownMenu";
+import ChoiceOne from "../../Components/ChoiceOne/ChoiceOne";
+import ChoiceTwo from "../../Components/ChoiceTwo/ChoiceTwo";
+import ChoiceThree from "../../Components/ChoiceThree/ChoiceThree";
+import ChoiceFour from "../../Components/ChoiceFour/ChoiceFour";
+import ChoiceFive from "../../Components/ChoiceFive/ChoiceFive";
+import OrderSummary from "../../Components/OrderSummary/OrderSummary";
 
 export default function Subscribe() {
   const { setCheckout } = useContext(ChoiceCardContext);
@@ -118,13 +118,11 @@ export default function Subscribe() {
             three="Every month"
           />
         </DropdownMenu>
+        <OrderSummary />
+        <button className="subscribe-button" onClick={() => setCheckout(true)}>
+          Create my plan!
+        </button>
       </Questions>
-
-      <OrderSummary />
-
-      <button className="subscribe-button" onClick={() => setCheckout(true)}>
-        Create my plan!
-      </button>
     </>
   );
 }

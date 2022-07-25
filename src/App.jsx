@@ -12,6 +12,7 @@ import HowItWorksTablet from "./ResponsiveComponents/HowItWorksTablet/HowItWorks
 import HowItWorksDesktop from "./ResponsiveComponents/HowItWorksDesktop/HowItWorksDesktop";
 import About from "./Components/About/About";
 import Subscribe from "./Components/Subscribe/Subscribe";
+import SubscribeDesktop from "../src/ResponsiveComponents/SubscribeDesktop/SubscribeDesktop";
 import Modal from "./Components/Modal/Modal";
 import ModalTablet from "./ResponsiveComponents/ModalTablet/ModalTablet";
 import Footer from "./Components/Footer/Footer";
@@ -123,7 +124,12 @@ function App() {
                   }}
                 >
                   <Navbar />
-                  <Subscribe />
+                  <MediaQuery maxWidth={1023}>
+                    <Subscribe />
+                  </MediaQuery>
+                  <MediaQuery minWidth={1024}>
+                    <SubscribeDesktop />
+                  </MediaQuery>
                   <MediaQuery maxWidth={767}>
                     <Modal checkout={checkout} />
                   </MediaQuery>
