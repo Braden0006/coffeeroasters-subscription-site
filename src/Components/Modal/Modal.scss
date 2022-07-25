@@ -76,6 +76,7 @@
 // Media query for tablet
 @media screen and (min-width: 768px) {
   .modal {
+    background: $transparent-black;
 
     .modal__content {
       height: 55vh;
@@ -118,3 +119,58 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .modal {
+
+    .modal__content {
+      height: 65vh;
+      width: 45vw;
+
+      .modal__content__title {
+        height: 24rem;
+
+        .modal__content__title-title {
+          font-size: $forty;
+        }
+      }
+
+      .modal__content__body {
+
+        .modal__content__body__question {
+          font-size: $sixteen;
+        }
+
+        .modal__content__body__checkout {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .modal__content__body__checkout__price {
+            font-size: 3.2rem;
+            font-family: $fraunces;
+            text-align: center;
+            margin-right: 1rem;
+            color: $dark-grey-blue;
+          }
+
+          .modal__content__body__checkout__button {
+            @include button-style;
+            width: 45%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .modal {
+
+    .modal__content {
+      width: 40vw;
+    }
+  }
+}
+
