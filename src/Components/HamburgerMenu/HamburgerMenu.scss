@@ -25,8 +25,12 @@
         .menu__list-item {
             font-size: $twentyfour;
             font-family: $fraunces;
-            color: $dark-grey-blue;
             margin-bottom: 3rem;
+
+            .menu__list-item__link {
+                text-decoration: none;
+                color: $dark-grey-blue;
+            }
         }
     }
 }
