@@ -30,8 +30,6 @@ function App() {
   const [cardFiveActive, setCardFiveActive] = useState("");
   const [cardFivePrice, setCardFivePrice] = useState("");
 
-  const [ref1Active, setRef1Active] = useState(false);
-
   // This is for the checkout modal, for when the "Create my plan" button is clicked
   const [checkout, setCheckout] = useState(false);
 
@@ -119,8 +117,6 @@ function App() {
                     setCardFivePrice,
                     menuActive,
                     setMenuActive,
-                    ref1Active,
-                    setRef1Active,
                   }}
                 >
                   <Navbar />

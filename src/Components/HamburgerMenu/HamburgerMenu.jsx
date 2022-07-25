@@ -9,7 +9,7 @@ import NavbarClose from "../NavbarClose/NavbarClose";
 import "./HamburgerMenu.css";
 
 export default function HamburgerMenu() {
-  const { menuActive } = useContext(ChoiceCardContext);
+  const { menuActive, setMenuActive } = useContext(ChoiceCardContext);
 
   if (!menuActive) return null;
 
@@ -19,17 +19,29 @@ export default function HamburgerMenu() {
 
       <ul className="menu__list">
         <li className="menu__list-item space">
-          <Link className="menu__list-item__link" to="/">
+          <Link
+            className="menu__list-item__link"
+            to="/"
+            onClick={() => setMenuActive(!menuActive)}
+          >
             Home
           </Link>
         </li>
         <li className="menu__list-item space">
-          <Link className="menu__list-item__link" to="/about">
+          <Link
+            className="menu__list-item__link"
+            to="/about"
+            onClick={() => setMenuActive(!menuActive)}
+          >
             About Us
           </Link>
         </li>
         <li className="menu__list-item">
-          <Link className="menu__list-item__link" to="/subscribe">
+          <Link
+            className="menu__list-item__link"
+            to="/subscribe"
+            onClick={() => setMenuActive(!menuActive)}
+          >
             Create Your Plan
           </Link>
         </li>
