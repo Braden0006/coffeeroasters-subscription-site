@@ -31,7 +31,13 @@
                 text-decoration: none;
                 color: $dark-grey-blue;
             }
+            
+            .menu__list-item__link:hover {
+                color: $grey;
+                transition: 0.2s ease-in-out;
+            }
         }
+
     }
 }
 
