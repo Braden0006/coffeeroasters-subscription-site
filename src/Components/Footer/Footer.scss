@@ -32,7 +32,7 @@
                 text-decoration: none;
                 color: $grey;
             }
-            
+
             .footer__list-item__link:hover {
                 color: $light-cream;
                 transition: color 0.2s ease-in-out;
@@ -47,6 +47,15 @@
         justify-content: space-evenly;
         align-items: center;
         margin-top: 3rem;
+
+        .footer__social__icon {
+            cursor: pointer;
+
+            .footer__social__icon__path:hover {
+                fill: $pale-orange;
+                transition: 0.2s ease-in-out;
+            }
+        }
     }
 }
 
