@@ -39,12 +39,6 @@
     margin-top: 6rem;
 }
 
-.subscribe-button:hover {
-    background-color: $button-hover;
-    transition: background-color 0.2s ease-in-out;
-    cursor: pointer;
-}
-
 // Media query for tablet
 @media screen and (min-width: 768px) {
     .subscribe {
@@ -89,6 +83,12 @@
     .subscribe-button {
         position: absolute;
         right: 0;
+    }
+
+    .subscribe-button:hover {
+        background-color: $button-hover;
+        transition: background-color 0.2s ease-in-out;
+        cursor: pointer;
     }
 }
 
