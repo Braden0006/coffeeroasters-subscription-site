@@ -27,12 +27,18 @@
             letter-spacing: 0.15rem;
             padding: 1.5rem 0rem;
             cursor: pointer;
+
+            .footer__list-item__link {
+                text-decoration: none;
+                color: $grey;
+            }
+            
+            .footer__list-item__link:hover {
+                color: $light-cream;
+                transition: color 0.2s ease-in-out;
+            }
         }
 
-        .footer__list-item:hover {
-            color: $light-cream;
-            transition: color 0.2s ease-in-out;
-        }
     }
 
     .footer__social {

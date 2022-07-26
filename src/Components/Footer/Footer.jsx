@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import "./Footer.css";
 
 export default function Footer() {
@@ -27,9 +29,21 @@ export default function Footer() {
       </svg>
 
       <ul className="footer__list">
-        <li className="footer__list-item footer-space">HOME</li>
-        <li className="footer__list-item footer-space">ABOUT US</li>
-        <li className="footer__list-item">CREATE YOUR PLAN</li>
+        <li className="footer__list-item footer-space">
+          <Link className="footer__list-item__link" to="/">
+            HOME
+          </Link>
+        </li>
+        <li className="footer__list-item footer-space">
+          <Link className="footer__list-item__link" to="/about">
+            ABOUT US
+          </Link>
+        </li>
+        <li className="footer__list-item">
+          <Link className="footer__list-item__link" to="/subscribe">
+            CREATE YOUR PLAN
+          </Link>
+        </li>
       </ul>
       <div className="footer__social">
         <div className="footer__social__icon">
