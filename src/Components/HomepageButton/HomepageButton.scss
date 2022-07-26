@@ -3,11 +3,15 @@
 .homepage__button {
     font-family: $fraunces;
     font-size: $eighteen;
-    color: $light-cream;
     background-color: $dark-cyan;
     border: none;
     border-radius: 0.5rem;
     padding: 1.5rem 3rem;
+
+    .homepage__button__link {
+        text-decoration: none;
+        color: $light-cream;
+    }
 }
 
 .homepage__button:hover {

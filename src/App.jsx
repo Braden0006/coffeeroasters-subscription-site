@@ -17,6 +17,8 @@ import Modal from "./Components/Modal/Modal";
 import ModalTablet from "./ResponsiveComponents/ModalTablet/ModalTablet";
 import Footer from "./Components/Footer/Footer";
 
+import ScrollToTop from "./Modules/ScrollToTop";
+
 import { ChoiceCardContext } from "../src/Context/ChoiceCardContext";
 
 import "./App.css";
@@ -52,97 +54,95 @@ function App() {
 
   return (
     <>
-      <Routes>
-        <Route
-          path="/coffeeroasters-subscription-site/"
-          element={
-            <ChoiceCardContext.Provider value={{ menuActive, setMenuActive }}>
-              <section className="app-home">
-                <Navbar />
-                <Homepage />
-              </section>
-              <section className="app-collection">
-                <Collection />
-              </section>
-              <section className="app-why-us">
-                <WhyUs />
-              </section>
-              <section className="app-how">
-                <MediaQuery maxWidth={767}>
-                  <HowItWorks />
-                </MediaQuery>
-
-                <MediaQuery minWidth={768} maxWidth={1023}>
-                  <HowItWorksTablet />
-                </MediaQuery>
-
-                <MediaQuery minWidth={1024}>
-                  <HowItWorksDesktop />
-                </MediaQuery>
-              </section>
-            </ChoiceCardContext.Provider>
-          }
-        ></Route>
-        <Route
-          path="/coffeeroasters-subscription-site/about"
-          element={
-            <ChoiceCardContext.Provider value={{ menuActive, setMenuActive }}>
-              <section className="app-about">
-                <Navbar />
-                <About />
-              </section>
-            </ChoiceCardContext.Provider>
-          }
-        ></Route>
-        <Route
-          path="/coffeeroasters-subscription-site/subscribe"
-          element={
-            <>
-              <section className="app-subscribe">
-                <ChoiceCardContext.Provider
-                  value={{
-                    cardOneActive,
-                    setCardOneActive,
-                    cardTwoActive,
-                    setCardTwoActive,
-                    cardThreeActive,
-                    setCardThreeActive,
-                    cardFourActive,
-                    setCardFourActive,
-                    cardFiveActive,
-                    setCardFiveActive,
-                    checkout,
-                    setCheckout,
-                    cardFivePrice,
-                    setCardFivePrice,
-                    menuActive,
-                    setMenuActive,
-                  }}
-                >
+      <ScrollToTop>
+        <Routes>
+          <Route
+            path="/coffeeroasters-subscription-site/"
+            element={
+              <ChoiceCardContext.Provider value={{ menuActive, setMenuActive }}>
+                <section className="app-home">
                   <Navbar />
-                  <MediaQuery maxWidth={1023}>
-                    <Subscribe />
+                  <Homepage />
+                </section>
+                <section className="app-collection">
+                  <Collection />
+                </section>
+                <section className="app-why-us">
+                  <WhyUs />
+                </section>
+                <section className="app-how">
+                  <MediaQuery maxWidth={767}>
+                    <HowItWorks />
+                  </MediaQuery>
+                  <MediaQuery minWidth={768} maxWidth={1023}>
+                    <HowItWorksTablet />
                   </MediaQuery>
                   <MediaQuery minWidth={1024}>
-                    <SubscribeDesktop />
+                    <HowItWorksDesktop />
                   </MediaQuery>
-                  <MediaQuery maxWidth={767}>
-                    <Modal checkout={checkout} />
-                  </MediaQuery>
-
-                  <MediaQuery minWidth={768}>
-                    <ModalTablet checkout={checkout} />
-                  </MediaQuery>
-                </ChoiceCardContext.Provider>
-              </section>
-            </>
-          }
-        ></Route>
-      </Routes>
-
-      <section className="app-footer">
-        <Footer />
-      </section>
+                </section>
+              </ChoiceCardContext.Provider>
+            }
+          ></Route>
+          <Route
+            path="/coffeeroasters-subscription-site/about"
+            element={
+              <ChoiceCardContext.Provider value={{ menuActive, setMenuActive }}>
+                <section className="app-about">
+                  <Navbar />
+                  <About />
+                </section>
+              </ChoiceCardContext.Provider>
+            }
+          ></Route>
+          <Route
+            path="/coffeeroasters-subscription-site/subscribe"
+            element={
+              <>
+                <section className="app-subscribe">
+                  <ChoiceCardContext.Provider
+                    value={{
+                      cardOneActive,
+                      setCardOneActive,
+                      cardTwoActive,
+                      setCardTwoActive,
+                      cardThreeActive,
+                      setCardThreeActive,
+                      cardFourActive,
+                      setCardFourActive,
+                      cardFiveActive,
+                      setCardFiveActive,
+                      checkout,
+                      setCheckout,
+                      cardFivePrice,
+                      setCardFivePrice,
+                      menuActive,
+                      setMenuActive,
+                    }}
+                  >
+                    <Navbar />
+                    <MediaQuery maxWidth={1023}>
+                      <Subscribe />
+                    </MediaQuery>
+                    <MediaQuery minWidth={1024}>
+                      <SubscribeDesktop />
+                    </MediaQuery>
+                    <MediaQuery maxWidth={767}>
+                      <Modal checkout={checkout} />
+                    </MediaQuery>
+                    <MediaQuery minWidth={768}>
+                      <ModalTablet checkout={checkout} />
+                    </MediaQuery>
+                  </ChoiceCardContext.Provider>
+                </section>
+              </>
+            }
+          ></Route>
+        </Routes>
+        <section className="app-footer">
+          <Footer />
+        </section>
+      </ScrollToTop>
     </>
   );
 }
