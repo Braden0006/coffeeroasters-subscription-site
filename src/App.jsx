@@ -48,7 +48,7 @@ function App() {
       document.body.style.overFlowY = "auto";
       setMenuActive(true);
     }
-  }, []);
+  });
 
   return (
     <>

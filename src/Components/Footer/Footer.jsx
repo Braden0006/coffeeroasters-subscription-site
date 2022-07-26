@@ -30,17 +30,26 @@ export default function Footer() {
 
       <ul className="footer__list">
         <li className="footer__list-item footer-space">
-          <Link className="footer__list-item__link" to="/">
+          <Link
+            className="footer__list-item__link"
+            to="/coffeeroasters-subscription-site/"
+          >
             HOME
           </Link>
         </li>
         <li className="footer__list-item footer-space">
-          <Link className="footer__list-item__link" to="/about">
+          <Link
+            className="footer__list-item__link"
+            to="/coffeeroasters-subscription-site/about"
+          >
             ABOUT US
           </Link>
         </li>
         <li className="footer__list-item">
-          <Link className="footer__list-item__link" to="/subscribe">
+          <Link
+            className="footer__list-item__link"
+            to="/coffeeroasters-subscription-site/subscribe"
+          >
             CREATE YOUR PLAN
           </Link>
         </li>
