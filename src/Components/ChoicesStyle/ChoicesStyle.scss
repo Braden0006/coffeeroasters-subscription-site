@@ -29,6 +29,12 @@
             margin-top: 1rem;
         }
     }
+
+    .choices__card:hover {
+        background-color: $pale-orange;
+        transition: background-color 0.2s ease-in-out;
+        cursor: pointer;
+    }
 }
 
 .choice-card-one {
