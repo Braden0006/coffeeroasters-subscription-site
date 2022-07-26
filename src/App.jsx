@@ -60,17 +60,17 @@ function App() {
             path="/coffeeroasters-subscription-site/"
             element={
               <ChoiceCardContext.Provider value={{ menuActive, setMenuActive }}>
-                <section className="app-home">
+                <nav className="app-home">
                   <Navbar />
                   <Homepage />
-                </section>
-                <section className="app-collection">
+                </nav>
+                <main className="app-collection">
                   <Collection />
-                </section>
-                <section className="app-why-us">
+                </main>
+                <main className="app-why-us">
                   <WhyUs />
-                </section>
-                <section className="app-how">
+                </main>
+                <main className="app-how">
                   <MediaQuery maxWidth={767}>
                     <HowItWorks />
                   </MediaQuery>
@@ -80,7 +80,7 @@ function App() {
                   <MediaQuery minWidth={1024}>
                     <HowItWorksDesktop />
                   </MediaQuery>
-                </section>
+                </main>
               </ChoiceCardContext.Provider>
             }
           ></Route>
@@ -88,10 +88,10 @@ function App() {
             path="/coffeeroasters-subscription-site/about"
             element={
               <ChoiceCardContext.Provider value={{ menuActive, setMenuActive }}>
-                <section className="app-about">
+                <main className="app-about">
                   <Navbar />
                   <About />
-                </section>
+                </main>
               </ChoiceCardContext.Provider>
             }
           ></Route>
@@ -99,7 +99,7 @@ function App() {
             path="/coffeeroasters-subscription-site/subscribe"
             element={
               <>
-                <section className="app-subscribe">
+                <main className="app-subscribe">
                   <ChoiceCardContext.Provider
                     value={{
                       cardOneActive,
@@ -134,14 +134,14 @@ function App() {
                       <ModalTablet checkout={checkout} />
                     </MediaQuery>
                   </ChoiceCardContext.Provider>
-                </section>
+                </main>
               </>
             }
           ></Route>
         </Routes>
-        <section className="app-footer">
+        <footer className="app-footer">
           <Footer />
-        </section>
+        </footer>
       </ScrollToTop>
     </>
   );

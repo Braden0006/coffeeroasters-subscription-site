@@ -6,7 +6,7 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <section className="footer">
+    <footer className="footer">
       <svg
         width="218"
         height="24"
@@ -91,6 +91,6 @@ export default function Footer() {
           </svg>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }

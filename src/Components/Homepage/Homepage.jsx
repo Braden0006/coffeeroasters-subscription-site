@@ -7,7 +7,7 @@ import "./Homepage.css";
 export default function Homepage() {
   return (
     <section className="homepage">
-      <div className="homepage-container">
+      <main className="homepage-container">
         <h1 className="homepage__title">Great coffee made simple.</h1>
         <p className="homepage__info">
           Start your mornings with the world’s best coffees. Try our expertly
@@ -15,7 +15,7 @@ export default function Homepage() {
           your door, at your schedule.
         </p>
         <HomepageButton />
-      </div>
+      </main>
     </section>
   );
 }

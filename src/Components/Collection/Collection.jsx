@@ -116,12 +116,12 @@ export default function Collection() {
           </svg>
         </div>
       </MediaQuery>
-      <div className="collection__cards">
+      <main className="collection__cards">
         <CollectionCoffeeOne />
         <CollectionCoffeeTwo />
         <CollectionCoffeeThree />
         <CollectionCoffeeFour />
-      </div>
+      </main>
     </section>
   );
 }
