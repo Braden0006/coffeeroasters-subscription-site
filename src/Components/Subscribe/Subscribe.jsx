@@ -40,78 +40,23 @@ export default function Subscribe() {
         <HowItWorksDarkTablet />
       </MediaQuery>
       <Questions>
-        <DropdownMenu
-          title="How do you drink your coffee?"
-          icon={
-            <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
-                fill="#0E8784"
-                fillRule="nonzero"
-              />
-            </svg>
-          }
-        >
+        <DropdownMenu title="How do you drink your coffee?">
           <ChoiceOne one="Capsule" two="Filter" three="Origin" />
         </DropdownMenu>
 
-        <DropdownMenu
-          title="What type of coffee?"
-          icon={
-            <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
-                fill="#0E8784"
-                fillRule="nonzero"
-              />
-            </svg>
-          }
-        >
+        <DropdownMenu title="What type of coffee?">
           <ChoiceTwo one="Single Origin" two="Decaf" three="Blended" />
         </DropdownMenu>
 
-        <DropdownMenu
-          title="How much would you like?"
-          icon={
-            <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
-                fill="#0E8784"
-                fillRule="nonzero"
-              />
-            </svg>
-          }
-        >
+        <DropdownMenu title="How much would you like?">
           <ChoiceThree one="250g" two="500g" three="1000g" />
         </DropdownMenu>
 
-        <DropdownMenu
-          title="Want us to grind them?"
-          icon={
-            <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
-                fill="#0E8784"
-                fillRule="nonzero"
-              />
-            </svg>
-          }
-        >
+        <DropdownMenu title="Want us to grind them?">
           <ChoiceFour one="Wholebean" two="Filter" three="Cafetiére" />
         </DropdownMenu>
 
-        <DropdownMenu
-          title="How often should we deliver?"
-          icon={
-            <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
-                fill="#0E8784"
-                fillRule="nonzero"
-              />
-            </svg>
-          }
-        >
+        <DropdownMenu title="How often should we deliver?">
           <ChoiceFive
             one="Every week"
             two="Every 2 weeks"

@@ -19,6 +19,15 @@
       color: $grey;
       width: 65%;
     }
+
+    .drop-menu__logo {
+      cursor: pointer;
+
+      .drop-menu__logo__path:hover {
+        fill: $button-hover;
+        transition: fill 0.1s ease-in-out;
+      }
+    }
   }
 }
 
