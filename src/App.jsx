@@ -54,7 +54,7 @@ function App() {
     <>
       <Routes>
         <Route
-          path="/"
+          path="coffeeroasters-subscription-site/"
           element={
             <ChoiceCardContext.Provider value={{ menuActive, setMenuActive }}>
               <section className="app-home">
@@ -84,7 +84,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/about"
+          path="coffeeroasters-subscription-site/about"
           element={
             <ChoiceCardContext.Provider value={{ menuActive, setMenuActive }}>
               <section className="app-about">
@@ -95,7 +95,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/subscribe"
+          path="coffeeroasters-subscription-site/subscribe"
           element={
             <>
               <section className="app-subscribe">
