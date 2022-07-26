@@ -45,10 +45,10 @@ function App() {
 
   useEffect(() => {
     if (window.innerWidth > 767) {
+      document.body.style.overFlowY = "auto";
       setMenuActive(true);
-      document.body.style.overFlow = "auto";
     }
-  });
+  }, []);
 
   return (
     <>
