@@ -57,7 +57,7 @@ function App() {
       <ScrollToTop>
         <Routes>
           <Route
-            path="/coffeeroasters-subscription-website"
+            path="/coffeeroasters-subscription-website.netlify.app"
             element={
               <ChoiceCardContext.Provider value={{ menuActive, setMenuActive }}>
                 <nav className="app-home">
@@ -85,7 +85,7 @@ function App() {
             }
           ></Route>
           <Route
-            path="/coffeeroasters-subscription-website/about"
+            path="/coffeeroasters-subscription-website.netlify.app/about"
             element={
               <ChoiceCardContext.Provider value={{ menuActive, setMenuActive }}>
                 <main className="app-about">
@@ -96,7 +96,7 @@ function App() {
             }
           ></Route>
           <Route
-            path="/coffeeroasters-subscription-website/subscribe"
+            path="/coffeeroasters-subscription-website.netlify.app/subscribe"
             element={
               <>
                 <main className="app-subscribe">
