@@ -21,7 +21,7 @@ export default function HamburgerMenu() {
         <li className="menu__list-item space">
           <Link
             className="menu__list-item__link"
-            to="coffeeroasters-subscription-site"
+            to="/"
             onClick={() => setMenuActive(!menuActive)}
           >
             Home
@@ -30,7 +30,7 @@ export default function HamburgerMenu() {
         <li className="menu__list-item space">
           <Link
             className="menu__list-item__link"
-            to="coffeeroasters-subscription-site/about"
+            to="/about"
             onClick={() => setMenuActive(!menuActive)}
           >
             About Us
@@ -39,7 +39,7 @@ export default function HamburgerMenu() {
         <li className="menu__list-item">
           <Link
             className="menu__list-item__link"
-            to="coffeeroasters-subscription-site/subscribe"
+            to="/subscribe"
             onClick={() => setMenuActive(!menuActive)}
           >
             Create Your Plan

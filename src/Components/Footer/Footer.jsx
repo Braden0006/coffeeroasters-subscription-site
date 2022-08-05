@@ -32,7 +32,7 @@ export default function Footer() {
         <li className="footer__list-item footer-space">
           <Link
             className="footer__list-item__link"
-            to="/coffeeroasters-subscription-site/"
+            to="/"
           >
             HOME
           </Link>
@@ -40,7 +40,7 @@ export default function Footer() {
         <li className="footer__list-item footer-space">
           <Link
             className="footer__list-item__link"
-            to="/coffeeroasters-subscription-site/about"
+            to="/about"
           >
             ABOUT US
           </Link>
@@ -48,7 +48,7 @@ export default function Footer() {
         <li className="footer__list-item">
           <Link
             className="footer__list-item__link"
-            to="/coffeeroasters-subscription-site/subscribe"
+            to="/subscribe"
           >
             CREATE YOUR PLAN
           </Link>
